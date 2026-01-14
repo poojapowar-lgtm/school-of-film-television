@@ -6,7 +6,7 @@ const recognitionsData = [
   {
     id: 1,
     name: "Best Film School Award",
-    image: "/assets/images/national_award.JPG",
+    image: "/assets/images/home/national_award.webp",
     points: [
       "Awarded by International Film Council",
       "Recognized for curriculum excellence",
@@ -16,7 +16,7 @@ const recognitionsData = [
   {
     id: 2,
     name: "Top Creative Institute",
-    image: "/assets/images/recognitions/rec2.jpg",
+    image: "/assets/images/recognitions/rec2.webp",
     points: [
       "National level recognition",
       "Creative pedagogy implemented",
@@ -26,7 +26,7 @@ const recognitionsData = [
   {
     id: 3,
     name: "Innovation in Education",
-    image: "/assets/images/recognitions/rec3.jpg",
+    image: "/assets/images/recognitions/rec3.webp",
     points: [
       "New-age filmmaking courses",
       "Integration of technology in teaching",

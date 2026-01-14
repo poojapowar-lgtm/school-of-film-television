@@ -163,7 +163,7 @@ const BaScreenacting = () => {
           <section ref={futureRef} id="future">
             <Scope
               title="Future Scope"
-              imageSrc="/assets/images/home/programs3.jpg"
+              imageSrc="/assets/images/home/programs3.webp"
               ctaPath="/careers"
             >
               <p>

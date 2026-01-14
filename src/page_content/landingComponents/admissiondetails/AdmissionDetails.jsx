@@ -74,7 +74,7 @@ const AdmissionDetails = () => {
 
   return (
     <section className="admission-details">
-      <DividerWithTitle title="Career Opportunities" />
+      <DividerWithTitle title="Admission Details" />
       {/* Buttons */}
       <div className="admission-buttons">
         {sections.map((sec, index) => (

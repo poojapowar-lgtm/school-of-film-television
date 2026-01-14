@@ -8,7 +8,7 @@ import DividerWithTitle from "../../components/reuseable_components/DividerWithT
 const Admission = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const bgImage = "/assets/images/inner-banner/admission-bnr.JPG";
+  const bgImage = "/assets/images/inner-banner/admission-bnr.webp";
   const title = "Admission";
   const subtitle = "Start Your Journey With Us";
 

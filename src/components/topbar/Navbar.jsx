@@ -15,7 +15,7 @@ const Navbar = ({ open, onClose }) => {
 
         {/* Logos */}
         <div className="nav-logos">
-          <img src="/assets/icons/film_logo.png" alt="Logo 1" />
+          <img src="/assets/icons/film_logo.webp" alt="Logo 1" />
           <img src="/assets/icons/mit_logo_black.webp" alt="Logo 2" />
         </div>
 

@@ -6,7 +6,7 @@ const ShortFilm = () => {
   const [category, setCategory] = useState("Documentary");
   const [year, setYear] = useState("2023-24");
 
-  const bgImage = "/assets/images/inner-banner/short-films-bnr.JPG";
+  const bgImage = "/assets/images/inner-banner/short-films-bnr.webp";
   const title = "Award-Winning Stories";
   const subtitle = "Start Your Journey With Us";
 

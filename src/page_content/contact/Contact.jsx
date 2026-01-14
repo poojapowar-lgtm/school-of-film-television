@@ -4,7 +4,7 @@ import DividerWithTitle from "../../components/reuseable_components/DividerWithT
 import "./contact.css";
 
 const Contact = () => {
-  const bgImage = "/assets/images/inner-banner/contact-bnr.JPG";
+  const bgImage = "/assets/images/inner-banner/contact-bnr.webp";
   const title = "Contact Us";
   const subtitle = "Start Your Journey With Us";
 

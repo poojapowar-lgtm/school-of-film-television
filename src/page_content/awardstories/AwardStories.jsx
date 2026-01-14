@@ -4,7 +4,7 @@ import InnerBanner from "../../components/inner_banner/InnerBanner";
 import DividerWithTitle from "../../components/reuseable_components/DividerWithTitle/DividerWithTitle";
 
 const AwardStories = () => {
-  const bgImage = "/assets/images/home/national_award.JPG";
+  const bgImage = "/assets/images/home/national_award.webp";
   const title = "Award-Winning Stories";
   const subtitle = "Start Your Journey With Us";
 
@@ -174,7 +174,7 @@ const AwardStories = () => {
             <div
               key={index}
               className="award-card"
-              style={{ backgroundImage: "url(/assets/images/home/awards_card.png)" }}
+              style={{ backgroundImage: "url(/assets/images/home/awards_card.webp)" }}
             >
               <div className="award-content">
                 <p className="film-name">{item.film}</p>
