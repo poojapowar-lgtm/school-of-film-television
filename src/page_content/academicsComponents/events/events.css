@@ -1,0 +1,70 @@
+/* Container */
+.events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+} 
+
+/* Vertical list */
+.events-grid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/* Card */
+.event-card {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  min-height: 220px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+/* Left image section */
+.event-left {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay on image */
+.event-left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(71, 71, 71, 0.55),
+    rgba(56, 55, 55, 0.1)
+  );
+    z-index: 0;
+}
+
+/* Title on image */
+.event-head {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.event-title{
+  color: goldenrod;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 600;
+}
+
+/* Right content */
+.event-right {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75) 0%,   
+    rgba(56, 55, 55, 0.3) 30%, 
+    rgba(241, 241, 241, 0.1) 100% 
+  );
+  padding: clamp(1.2rem, 3vw, 2rem);
+  display: flex;
+  align-items: center;
+}

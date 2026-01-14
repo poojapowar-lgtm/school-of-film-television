@@ -1,0 +1,71 @@
+.awards-section {
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  background: black;
+}
+
+.awards-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Cards Row */
+.awards-row {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.awards-row.five {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 75%;
+    gap: 30px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+/* Card */
+.award-card {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 25px;
+}
+
+.film-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.award-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #696984;
+}
+
+.student-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+

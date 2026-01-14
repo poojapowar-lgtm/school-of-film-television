@@ -1,0 +1,71 @@
+.vision-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Grid */
+.vision-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+}
+
+/* Base Card */
+.vision-card {
+  background: #ffffff;
+  min-height: 350px;
+  padding: 10px 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
+  position: relative;
+}
+
+/* Center Card (default highlighted) */
+.vision-card:nth-child(2) {
+  transform: scale(1);
+  box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.35);
+  border-bottom: 8px solid #8e2de2;
+  z-index: 2;
+}
+
+/* Remove center highlight when hovering any card */
+.vision-section :hover .vision-card:nth-child(2) {
+  transform: scale(1);
+  box-shadow: none;
+  border-bottom: none;
+  z-index: 1;
+}
+
+/* Hover effect */
+.vision-card:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.35);
+  border-bottom: 6px solid #8e2de2;
+  z-index: 3;
+}
+
+/* Icon */
+.vision-icon {
+  color: rgb(11, 169, 231);
+  font-size: 40px;
+}
+
+/* Title */
+.vision-title {
+  font-size: 22px;
+  margin: 0;
+  color: rgb(9, 9, 71);
+  font-weight: 600;
+}
+
+/* Text */
+.vision-text {
+  color: rgb(36, 35, 35);
+  font-size: 16px;
+  line-height: 1.6;
+}
+

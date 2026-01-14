@@ -1,0 +1,7 @@
+.usp-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 60px 20px;
+}
+

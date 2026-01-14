@@ -1,0 +1,10 @@
+.whythis-container {
+  margin: 0 auto;
+  padding: 60px 20px;
+} 
+/* GRID */
+.whythis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}

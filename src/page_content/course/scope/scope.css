@@ -1,0 +1,25 @@
+/* Layout */
+.scope-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Right Image */
+.scope-img {
+  width: 500px;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(209, 208, 208, 0.6);
+}
+
+.scope-cta {
+  text-align: center;
+  margin: 60px 0;
+}
+

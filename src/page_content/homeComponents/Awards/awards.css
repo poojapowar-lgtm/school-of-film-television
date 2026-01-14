@@ -1,0 +1,140 @@
+.awards-section {
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.awards-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Rows */
+.awards-row {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.awards-row.five {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.awards-row.four {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card */
+.award-card {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 25px;
+}
+
+.film-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.award-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color:#696984;
+}
+
+.student-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Button */
+.awards-btn{
+  bottom: 10px;
+  right: 10px;
+  margin-bottom: 30px;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .awards-row.five {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .awards-row.four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-row.five,
+  .awards-row.four {
+    grid-template-columns: 1fr;
+  }
+}
+
+.carousel-wrapper {
+  width: 93%;
+  overflow: hidden;
+  padding: 30px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+  width: 250px;
+  object-fit: cover;
+  margin-right: 40px;
+  flex-shrink: 0;
+  border: 4px solid rgb(190, 138, 6);
+}
+
+/* Continuous scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (optional) */
+.carousel-wrapper:hover .carousel-track {
+  animation-play-state: paused;
+}
+

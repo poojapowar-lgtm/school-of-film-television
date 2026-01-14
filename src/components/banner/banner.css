@@ -1,0 +1,110 @@
+/* Banner Wrapper */
+.banner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: clamp(1rem, 4vw, 3rem);
+}
+
+.bnr-video {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.bnr-video-container {
+  position: relative;
+  width: 100%;
+  height: min(100vh, 780px);
+  overflow: hidden;
+}
+
+.bnr-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bnr-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 50px 40px;
+  z-index: 2;
+}
+
+/* Banner Image */
+.bnr-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Left Title */
+.bnr-left-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+
+.dot-icon {
+  color: #f9be08;
+  font-size: 25px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+/* Right Content */
+.banner-right {
+  max-width: clamp(220px, 40vw, 420px);
+  text-align: right;
+}
+
+.banner-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.banner-text {
+  font-size: 20px;
+  opacity: 0.8;
+  color: #f9be08;
+  font-weight: 600;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.banner-btn {
+  padding: clamp(0.4rem, 1.5vw, 0.7rem) clamp(0.8rem, 3vw, 1.5rem);
+  background: none;
+  border-radius: 30px;
+  border: 1px solid purple;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.volume-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+

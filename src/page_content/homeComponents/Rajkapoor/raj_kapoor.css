@@ -1,0 +1,80 @@
+/* Container */
+.raj-container {
+  padding: 30px;
+}
+
+/* Layout */
+.raj-content {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 3px; 
+  border-radius: 0 15em 15em 0; 
+}
+
+/*remove animated layer */
+.image-wrapper::before {
+  content: none;
+}
+
+/* Image */
+.main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0 15em 15em 0;
+  position: relative;
+}
+
+/* Inner image overlay at top */
+.inner-image {
+  position: absolute;
+  bottom: -20px;
+  left: 95%;
+  transform: translateX(-80%);
+  width: 500px;
+  height: auto;
+  border-radius: 5%;
+  z-index: 2;
+  box-shadow: 10px 8px 15px rgba(255, 255, 255, 0.35);
+}
+
+/* Keyframes for border rotation */
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotateBorder {
+  to {
+    --a: 1turn;
+  }
+}
+
+/* Right - paragraph */
+.raj-text {
+  max-width: 900px;
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* Keyframes for border animation */
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotateBorder {
+  to {
+    --a: 1turn;
+  }
+}

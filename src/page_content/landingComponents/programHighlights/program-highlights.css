@@ -1,0 +1,44 @@
+/* ProgramHighlights.css */
+.program-highlights {
+  background: url("/public/assets/images/background/highlights-bg.webp")
+    no-repeat center center/cover;
+  padding: 20px 80px;
+  margin-top: 40px;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 400px;
+}
+
+.hg-content-wrapper {
+  max-width: 1400px;
+  margin-left: 20px;
+}
+
+.hg-title {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.horizontal-lists {
+  display: flex;
+  gap: 50px;
+}
+
+/* Title inside UL */
+.list-title {
+  font-size: 25px;
+  font-weight: 600;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Normal list items */
+.vertical-list li:not(.list-title),
+.hg-list li:not(.list-title) {
+  font-size: 18px;
+  font-weight: 500;
+  color: #a22826;
+  line-height: 1.6;
+}

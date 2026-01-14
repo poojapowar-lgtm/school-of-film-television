@@ -1,0 +1,105 @@
+import React from "react";
+import "./footer.css";
+import { useNavigate } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
+import socialIconsData from "../reuseable_components/socialIconsData";
+
+const Footer = () => {
+  const navigate = useNavigate();
+
+  return (
+    <footer className="footer">
+      {/* TOP FOOTER */}
+      <div className="footer-top">
+        {/* SECTION 1 */}
+        <div className="footer-section footer-left">
+          <div className="footer-logos">
+            <img
+              className="logo1"
+              src="/assets/icons/mit_logo.webp"
+              alt="Logo 1"
+            />
+            <img
+              className="logo2"
+              src="/assets/icons/film_logo.webp"
+              alt="Logo 2"
+            />
+          </div>
+
+          <p className="footer-address">
+            School of Film & Television, MIT-ADT Campus, <br />
+            Rajbaugh, Solapur-Pune Highway, Near Bharat Petrol Pump,
+            <br />
+            Loni Kalbhor, Maharashtra- 412201
+          </p>
+
+          <div className="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.763298670794!2d74.021772471721!3d18.494377912109268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e805e62101ff%3A0x1ddc1a0f0d10f749!2sMIT%20School%20of%20Film%20%26%20Theatre!5e0!3m2!1sen!2sin!4v1767600491380!5m2!1sen!2sin"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p className="footer-bottom">
+            Copyright © 2026 All rights reserved by Website Department MIT-ADT
+            University.
+          </p>
+        </div>
+
+        {/* SECTION 2 */}
+        <div className="footer-section footer-center">
+          <div className="footer-links">
+            <ul className="page-list">
+              <span className="footer-heading">Quick Links</span>
+              <li>About Us</li>
+              <li>Blogs</li>
+              <li>News</li>
+              <li>Courses</li>
+            </ul>
+
+            <ul className="page-list">
+              <span className="footer-heading">Contact Us</span>
+              <li>+91-96655 43913</li>
+              <li>+91-93253 40706</li>
+            </ul>
+
+            <ul className="page-list">
+              <span className="footer-heading">For Admission</span>
+              <li>admission.sft@mituniversity.edu.in</li>
+              <li>shraddha.kohad@mituniversity.edu.in</li>
+            </ul>
+          </div>
+
+          <div className="footer-social">
+            {socialIconsData.map(({ url, network, bgColor }, index) => (
+              <SocialIcon
+                key={index}
+                className="ft-social-icons"
+                url={url}
+                network={network}
+                bgColor={bgColor}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* SECTION 3 */}
+        <div className="footer-section footer-right">
+          <button
+            onClick={() => navigate("/apply-now")}
+            className="button"
+            id="footer-btn"
+          >
+            Join Now
+          </button>
+          <p className="footer-text vertical-words">
+            <span>Lights</span>
+            <span>Camera</span>
+            <span>and Action</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

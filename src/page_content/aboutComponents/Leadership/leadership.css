@@ -1,0 +1,37 @@
+
+/* Main Layout */
+.leadership-content {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Left text */
+.leadership-text {
+  flex: 1;
+}
+
+/* Right profile */
+.leadership-profile {
+  flex: 1;
+  text-align: center;
+}
+
+.leader-image {
+  max-width: 500px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.leader-name {
+  margin: 0;
+  font-size: 18px;
+}
+
+.leader-info span {
+  font-size: 18px;
+  color: rgb(243, 227, 173);
+}
+
+
+

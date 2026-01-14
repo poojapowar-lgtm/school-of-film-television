@@ -1,0 +1,101 @@
+.features-section {
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.feature-card {
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.feature-icon {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+
+.feature-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: wheat;
+  margin: 0;
+}
+
+/* unique features */
+.unique-features {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1a4ed8;
+}
+
+.uq-features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.uq-feature-card {
+  padding:  0 20px;
+  border-radius: 12px;
+  width: 60%;
+  background: whitesmoke;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   /* Animation */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideIn 1s forwards;
+}
+
+.uq-feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.uq-feature-card.left {
+  align-self: flex-start;
+}
+
+.uq-feature-card.right {
+  align-self: flex-end;
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+    align-self: center !important;
+  }
+}

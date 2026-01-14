@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Topbar from "./components/topbar/topbar.js";
+import Footer from "./components/footer/Footer";
+import MainRoutes from "./Routes/MainRoutes.jsx";
+import LandingPage from "./Routes/LandingPage.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Website layout WITH header & footer */}
+        <Route
+          path="/*"
+          element={
+            <div className="App">
+              <Topbar />
+              <MainRoutes />
+              <Footer />
+            </div>
+          }
+        />
+
+        {/* Landing page WITHOUT header & footer */}
+        <Route path="/apply-now" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
