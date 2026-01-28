@@ -34,23 +34,23 @@ const MscFilmmaking = () => {
   const specializations = [
     {
       title: "Direction and Screenplay Writing",
-      logo: "/assets/images/icons/direction.png",
+      logo: "/assets/images/icons/direction.webp",
     },
     {
       title: "Cinematography",
-      logo: "/assets/images/icons/cinematography.png",
+      logo: "/assets/images/icons/cinematography.webp",
     },
     {
       title: "Film Editing",
-      logo: "/assets/images/icons/megaphone.png",
+      logo: "/assets/images/icons/megaphone.webp",
     },
     {
       title: "Sound Recording & Designing",
-      logo: "/assets/images/icons/film-editing.png",
+      logo: "/assets/images/icons/film-editing.webp",
     },
     {
       title: "VFX &amp; Motion Graphics",
-      logo: "/assets/images/icons/VFX.png",
+      logo: "/assets/images/icons/VFX.webp",
     },
   ];
 
@@ -141,7 +141,7 @@ const MscFilmmaking = () => {
           <section ref={curriculumRef} id="curriculum">
             <Curriculum
               title="Academic Curriculum"
-              imageSrc="/assets/images/bts/Msc.JPG"
+              imageSrc="/assets/images/bts/Msc.webp"
             >
               <p>
                 The M.Sc. in Filmmaking program deepens student’s artistic and
@@ -176,7 +176,7 @@ const MscFilmmaking = () => {
           <section ref={futureRef} id="future">
             <Scope
               title="Future Scope"
-              imageSrc="/assets/images/bts/msc-shoot.jpg"
+              imageSrc="/assets/images/bts/msc-shoot.webp"
               ctaPath="/careers"
             >
               <p>

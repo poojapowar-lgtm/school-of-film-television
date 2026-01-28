@@ -34,23 +34,23 @@ const BscFilmmaking = () => {
   const specializations = [
     {
       title: "Direction and Screenplay Writing",
-      logo: "/assets/images/icons/direction.png",
+      logo: "/assets/images/icons/direction.webp",
     },
     {
       title: "Cinematography",
-      logo: "/assets/images/icons/cinematography.png",
+      logo: "/assets/images/icons/cinematography.webp",
     },
     {
       title: "Film Editing",
-      logo: "/assets/images/icons/megaphone.png",
+      logo: "/assets/images/icons/megaphone.webp",
     },
     {
       title: "Sound Recording & Designing",
-      logo: "/assets/images/icons/film-editing.png",
+      logo: "/assets/images/icons/film-editing.webp",
     },
     {
       title: "VFX &amp; Motion Graphics",
-      logo: "/assets/images/icons/VFX.png",
+      logo: "/assets/images/icons/VFX.webp",
     },
   ];
 
@@ -137,7 +137,7 @@ const BscFilmmaking = () => {
           <section ref={curriculumRef} id="curriculum">
             <Curriculum
               title="Academic Curriculum"
-              imageSrc="/assets/images/bts/Bsc.JPG"
+              imageSrc="/assets/images/bts/Bsc.webp"
             >
               <p>
                 The B.Sc. in Filmmaking program follows a production and
@@ -168,7 +168,7 @@ const BscFilmmaking = () => {
           <section ref={futureRef} id="future">
             <Scope
               title="Future Scope"
-              imageSrc="/assets/images/bts/bts-actor1.jpg"
+              imageSrc="/assets/images/bts/bts-actor1.webp"
               ctaPath="/careers"
             >
               <p>

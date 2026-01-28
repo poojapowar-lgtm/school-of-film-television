@@ -124,7 +124,7 @@ const BaScreenacting = () => {
           <section ref={curriculumRef} id="curriculum">
             <Curriculum
               title="Academic Curriculum"
-              imageSrc="/assets/images/bts/BA-shoot.JPG"
+              imageSrc="/assets/images/bts/BA-shoot.webp"
             >
               <p>
                 The B.A. in Screen Acting program offers a structured and
