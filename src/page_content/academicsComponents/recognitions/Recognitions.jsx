@@ -5,32 +5,30 @@ import "./recognitions.css";
 const recognitionsData = [
   {
     id: 1,
-    name: "Best Film School Award",
+    name: "Mr. Vishesh Iyer",
     image: "/assets/images/home/national_award.webp",
     points: [
-      "Awarded by International Film Council",
-      "Recognized for curriculum excellence",
-      "Outstanding student achievements",
+
+      "B.Sc. in Filmmaking - Batch 2016-17, Specialization – Direction & Screenplay Writing",
+      "68 th National Film Award - Best Debut Director Non Feature Film Category for His Graduation Film “Pariah”.",
     ],
   },
   {
     id: 2,
-    name: "Top Creative Institute",
+    name: "Mr. Shaksham Vyas",
     image: "/assets/images/recognitions/rec2.webp",
     points: [
-      "National level recognition",
-      "Creative pedagogy implemented",
-      "Strong industry collaborations",
+      "B.Sc. in Filmmaking - Batch 2020-21, Specialization – Direction & Screenplay Writing",
+      "ALL INDIA CHILDREN EDUCATIONAL eCONTENT COMPETITION (AICEeCC) 2023-24, Organised by NCERT – Best Film.",
     ],
   },
   {
     id: 3,
-    name: "Innovation in Education",
+    name: "Mr. Rishabh Nahar",
     image: "/assets/images/recognitions/rec3.webp",
     points: [
-      "New-age filmmaking courses",
-      "Integration of technology in teaching",
-      "Awarded by Education Ministry",
+   "M.Sc in Filmmaking - Batch 2021-22, Specialization - Cinematography",
+   "ALL INDIA CHILDREN EDUCATION eCONTENT COMPETITION (AICEeCC) 2023-24, Organised by NCERT- Best Editor"
     ],
   },
 ];
@@ -52,7 +50,7 @@ const Recognitions = () => {
               {/* Name and Button */}
               <div className="rec-header">
                 <h3 className="innerpage-subtitle">{rec.name}</h3>
-                <button className="button" id="rec-btn">View More</button>
+                <button className="button" id="rec-btn">Watch Here</button>
               </div>
 
               {/* UL/LI List */}

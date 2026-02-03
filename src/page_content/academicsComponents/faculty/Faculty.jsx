@@ -38,6 +38,11 @@ const facultyData = [
     name: "Prof. Prasad Thorat",
     designation: "Assistant Professor, VFX &amp; Motion Graphics.",
   },
+  {
+    id: 8,
+    name: "Prof. Sajeeb Majumder",
+    designation: "Asst. Prof. Art Direction & Production Design",
+  },
 ];
 
 const Faculty = () => {
@@ -45,7 +50,6 @@ const Faculty = () => {
     <div>
       <h2 className="innerpage-title">Our Faculty</h2>
       <div className="faculty-container">
-
         <div
           className={`faculty-grid ${
             facultyData.length % 4 !== 0 ? "center-last-row" : ""

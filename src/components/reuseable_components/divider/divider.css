@@ -1,14 +1,14 @@
 .divider-wrapper {
   display: flex;
   justify-content: center;
- margin-top: 30px;
+  margin-top: clamp(20px, 3vw, 40px);
 }
 
 /* Base divider line */
 .divider-effect {
   position: relative;
-  width:100px;
-  height: 2px;
+  width: clamp(50px, 5vw, 100px);
+  height: clamp(1px, 0.3vw, 3px);
   background: linear-gradient(
     to right,
     transparent,
@@ -22,11 +22,11 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 8px;
-  height: 8px;
-  background: white;
+  width: clamp(5px, 1vw, 10px);
+  height: clamp(5px, 1vw, 10px);
+  background: whitesmoke;
   transform: translateY(-50%) rotate(45deg);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 clamp(4px, 1vw, 10px) rgba(255, 255, 255, 0.8);
 }
 
 /* Small sparkle */
@@ -35,15 +35,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 10px;
+  font-size: clamp(8px, 2vw, 12px);
   color: white;
   opacity: 0.9;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 clamp(3px, 1vw, 8px) rgba(255, 255, 255, 0.8);
 }
 
 /* LEFT POINTING (line → spark → small spark) */
 .divider-wrapper.left .divider-effect::before {
-  right: -6px;
+  right: -8px;
 }
 
 .divider-wrapper.left .divider-effect::after {
@@ -65,7 +65,7 @@
 }
 
 .divider-wrapper.right .divider-effect::before {
-  left: -6px;
+  left: -8px;
 }
 
 .divider-wrapper.right .divider-effect::after {

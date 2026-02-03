@@ -1,25 +1,27 @@
 .admission {
-  width: 80%;
+  width: clamp(90%, 80vw, 80%);
   margin: 0 auto;
-  padding: 20px 100px;
+  padding: clamp(16px, 4vw, 20px) clamp(16px, 6vw, 100px);
 }
 
 .admission-section {
-  margin-bottom: 40px;
+  margin-bottom: clamp(24px, 6vw, 40px);
 }
 
+/* Table */
 .admission-table {
   margin: 0 auto;
   width: min(100%, 1000px);
   border-collapse: collapse;
 }
 
+/* Cells */
 .admission-table th,
 .admission-table td {
-  font-size: 18px;
+  font-size: clamp(12px, 1.2vw, 18px);
   font-weight: 500;
   border: 1px solid #ccc;
-  padding: 15px 20px;
+  padding: clamp(10px, 2.5vw, 15px) clamp(12px, 3vw, 20px);
   text-align: center;
 }
 
@@ -32,8 +34,8 @@
 .stages-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
-  max-width: 1400px;
+  padding: clamp(30px, 1vw, 40px) 0;
+  max-width: clamp(350px, 90vw, 1400px);
   margin: auto;
 }
 
@@ -90,12 +92,15 @@
   z-index: 1;
 }
 
+/* faq */
 .faq-wrapper {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
+    max-width: clamp(350px, 80vw, 1000px);
+  margin: clamp(30px, 5vw, 60px) auto; 
 }
 
+.faq-container{
+  padding:clamp(10px, 2vw, 30px)  0;
+}
 .faq-item {
   border-bottom: 0.5px solid silver;
 }
@@ -105,10 +110,52 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  font-size: clamp(14px, 2vw, 18px);   
 }
 
-/* Icon */
 .faq-icon {
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);  
   color: rgb(240, 61, 165);
+}
+
+@media (max-width: 768px) {
+  .admission-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .stages-wrapper {
+    gap: 25px;
+  }
+  .stage-cards,
+  .stage-cards.right {
+    justify-content: flex-start;
+  }
+
+  .stage-cards::before {
+    left: clamp(20px, 5vw, 30px);
+    width: clamp(2px, 0.5vw, 4px);
+  }
+
+  .stage-cards::after {
+    left: clamp(20px, 5vw, 30px);
+  }
+
+  .stage-card {
+    width: 100%;
+    margin-left: clamp(40px, 8vw, 60px); 
+    margin-right: 0;
+  }
+
+  .stage-cards .stage-card:first-child {
+    margin-left: clamp(40px, 8vw, 60px);
+  }
+
+  .stages-wrapper {
+    padding-left: clamp(20px, 5vw, 30px);
+    padding-right: clamp(20px, 5vw, 30px);
+  }
 }

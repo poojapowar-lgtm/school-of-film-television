@@ -1,17 +1,17 @@
-
 .ach-images-grid {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: clamp(16px, 4vw, 40px);
 }
 
 .ach-image {
-  max-width: 450px;
+  max-width: clamp(150px, 45vw, 450px);
   object-fit: cover;
-  border-radius: 8px;
-  margin: 20px 0;
+  border-radius: clamp(6px, 1vw, 8px);
+  margin: clamp(12px, 3vw, 20px) 0;
 }
+
 
 
 /* Responsive */
@@ -24,11 +24,5 @@
 @media (max-width: 768px) {
   .ach-images-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .ach-images-grid {
-    grid-template-columns: 1fr;
   }
 }

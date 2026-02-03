@@ -7,7 +7,7 @@
 /* Sidebar list item spacing + responsive font */
 .sidebar li {
   margin-bottom: clamp(8px, 1vw, 14px);
-  font-size: 18px;
+  font-size: clamp(11px, 1.2vw, 18px);
   font-weight: 500;
   text-align: start;
 }
@@ -37,4 +37,40 @@
 .sidebar li.active .sidebar-link,
 .sidebar li .sidebar-link:hover {
   color: goldenrod;
+}
+
+@media (max-width: 768px) {
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sidebar li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  /* Divider BEFORE text */
+  .sidebar li::before {
+    content: "|";
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 clamp(6px, 1.5vw, 12px);
+  }
+
+  /* Remove divider for first item */
+  .sidebar li:first-child::before {
+    content: "";
+    margin: 0;
+  }
+
+  .sidebar li a,
+  .sidebar li .sidebar-link {
+    padding: clamp(6px, 2vw, 10px) 0;
+    line-height: 1.2;
+    text-align: left;
+  }
 }

@@ -3,14 +3,14 @@ import "./curriculum.css";
 
 const Curriculum = ({ title, children, imageSrc }) => {
   return (
-    <section >
+    <section className="curriculum-section">
+      {/* Title always on top */}
+      {title && <h2 className="innerpage-title">{title}</h2>}
+
       <div className="curriculum-content">
         {/* Left Content */}
         <div className="curriculum-left">
-          {title && <h2 className="innerpage-title">{title}</h2>}
-          <div className="curriculum-text">
-           {children}
-          </div>
+          <div className="curriculum-text">{children}</div>
         </div>
 
         {/* Right Image */}

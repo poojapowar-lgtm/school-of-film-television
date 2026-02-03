@@ -27,7 +27,7 @@ const NationalAwards = () => {
           <div className="awards-content">
             {/* Left list */}
             <div className="awards-left">
-              <ul className="awards-list">
+              <ul className="page-list awards-list">
                 {/* <h4 className="subtitle">National Awards</h4> */}
                 <li>Film: Pariah (Marathi and Hindi)</li>
                 <li>Section: Non-Feature Film</li>

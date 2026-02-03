@@ -52,15 +52,14 @@ const VishwarajStudio = () => {
           {/* Right Content */}
 
           <div className="studio-section">
-            <div className="studio-text">
-              {" "}
-              <p>
+            <div >
+              <p className="studio-text">
                 One of Pune's Largest Professional Shooting Studios - A fully
                 air-conditioned shooting floor enables large scale set
                 construction, controlled lighting, and immersive production
                 training.
               </p>
-              <p>
+              <p className="studio-text">
                 The campus houses state of the art production and post
                 production facilities, including high end digital cameras,
                 professional editing suites, and one of the largest air

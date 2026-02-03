@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import "./scope.css";
 
 const Scope = ({ title, children, imageSrc, ctaPath }) => {
-  
   const navigate = useNavigate();
 
   return (
-    <section>
+    <section className="scope-section">
+      {title && <h2 className="innerpage-title">{title}</h2>}
       <div className="scope-content">
         {/* Left Content */}
         <div className="scope-left">
@@ -16,14 +16,15 @@ const Scope = ({ title, children, imageSrc, ctaPath }) => {
 
         {/* Right Image */}
         <div className="scope-right">
-          {title && <h2 className="innerpage-title">{title}</h2>}
           <div className="scope-text">{children}</div>
         </div>
       </div>
 
       {/* apply btn */}
       <div className="scope-cta">
-        <h3 className="btn-heading ">Start your story here and begin your journey as a filmaker !</h3>
+        <h3 className="btn-heading ">
+          Start your story here and begin your journey as a filmaker !
+        </h3>
         <button className="button" onClick={() => navigate(ctaPath)}>
           Apply Now
         </button>

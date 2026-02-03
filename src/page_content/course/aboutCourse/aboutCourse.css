@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: clamp(1.2rem, 3vw, 2.2rem);
+  gap: clamp(16px, 3vw, 32px); 
+  margin-bottom: clamp(20px, 3vw, 36px); 
 }
+
 
 /* Specialization Section */
 /* .specialization-section {

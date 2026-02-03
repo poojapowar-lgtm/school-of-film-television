@@ -1,9 +1,9 @@
 .landing-top {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: url("/public/assets/images/banner/Ankit Bhat.webp");
   background-repeat: no-repeat;
   background-position: 80% 25%;
-  padding: 0 60px;
+  padding: 0 clamp(10px, 2vw, 60px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,39 +37,51 @@
 
 /* Top Bar */
 .landing-top-bar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: clamp(12px, 3vw, 30px);
+  padding: clamp(10px, 3vw, 30px);
 }
 
+/* Logos container */
 .logos {
   display: flex;
-  gap: 20px;
+  gap: clamp(10px, 3vw, 20px);
   align-items: center;
 }
 
-.ld-logo1 {
-  margin-left: 50px;
-  width: 115px;
-}
-
+/* Logo sizes */
 .ld-logo2 {
-  width: 240px;
-  height: 100px;
+  margin-left: clamp(0px, 4vw, 50px);
+  width: clamp(60px, 12vw, 115px);
 }
 
+.ld-logo1 {
+  width: clamp(90px, 25vw, 240px);
+  height: clamp(50px, 12vw, 100px);
+  object-fit: contain;
+}
+
+/* Title */
 .logo-title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: clamp(0.5px, 0.3vw, 1px);
   font-weight: 400;
-  font-size: 55px;
+  font-size: clamp(26px, 6vw, 55px);
   color: gold;
+  line-height: 1.1;
 }
+
+/* Social icons */
 .ld-social {
-  margin-bottom: 50px;
-  display: flex;
-  gap: 15px;
-  cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: clamp(10px, 1vw, 20px);
+    right: clamp(10px, 1vw, 16px);
+    gap: clamp(5px, 1vw, 15px);
+    margin-bottom: 0;
 }
 
 .ld-social-icons {
@@ -84,50 +96,56 @@
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
-  padding: 50px;
+  padding: clamp(20px, 5vw, 50px);
 }
 
-
+/* Info Card */
 .info-card {
   background: whitesmoke;
   color: black;
-  max-width: 500px;
-  border-radius: 15px;
+  max-width: clamp(280px, 60vw, 500px);
+  border-radius: clamp(10px, 3vw, 15px);
 }
 
+/* Form Title */
 .form-title {
   font-family: "Poppins-Medium", Helvetica;
-  border-radius: 15px 15px 0 0;
+  border-radius: clamp(10px, 3vw, 15px) clamp(10px, 3vw, 15px) 0 0;
   background: goldenrod;
   margin: 0;
-  font-size: 20px;
-  padding: 20px 0;
+  font-size: clamp(14px, 3vw, 20px);
+  padding: clamp(10px, 2vw, 20px) 0;
   text-align: center;
 }
 
+/* Form */
 .apply-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: clamp(4px, 1vw, 12px);
 }
 
+/* Inputs & Selects */
 .apply-form input,
 .apply-form select {
   border: 1px solid goldenrod;
-  padding: 15px 20px;
-  margin: 25px 25px 0 25px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: clamp(5px, 1vw, 15px) clamp(10px, 2vw, 20px);
+  margin: clamp(8px, 1vw, 25px) clamp(10px, 1vw, 25px) 0 clamp(10px, 1vw, 25px);
+  border-radius: clamp(4px, 1.5vw, 6px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 
+/* Placeholder */
 .apply-form input::placeholder {
   color: #777;
 }
 
+/* Submit Button */
 #landing-btn {
   width: fit-content;
-  margin: 15px auto;
+  margin: clamp(10px, 2vw, 15px) auto;
 }
+
 /* Country | State | City in one line */
 .form-row {
   display: flex;
@@ -137,14 +155,14 @@
   flex: 1;
 }
 
-/* landingtop Text */
+/* Landingtop Text */
 .landingtop-text {
   position: absolute;
-  right: 40px;
+  right: clamp(15px, 5vw, 40px);
   text-align: right;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: clamp(4px, 2vw, 6px);
 }
 
 /* Bottom Section */
@@ -152,12 +170,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: clamp(5px, 1vw, 40px);
 }
 
 .bottom-block {
   text-align: center;
-  padding: 0 40px;
+  padding: 0 clamp(10px, 2vw, 40px);
 }
 
 .bt-block-text {
@@ -165,13 +183,66 @@
 }
 
 .bt-block-title {
-  font-size: 50px;
-  margin-bottom: 60px;
+  font-size: clamp(25px, 6vw, 50px);
+  margin-bottom: clamp(20px, 1vw, 60px);
 }
 
 /* Divider (horizontal + vertical look) */
 .divider {
-  width: 2px;
-  height: 100px;
+  width: clamp(1px, 0.5vw, 2px);
+  height: clamp(60px, 12vw, 100px);
   background: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  .landing-top-bar {
+    position: relative;
+    justify-content: start;
+    /* padding-top: clamp(50px, 12vw, 70px); */
+    padding-top: clamp(5px, 1vw, 70px);
+  }
+
+  /* .ld-logo1 {
+    position: absolute;
+    top: clamp(10px, 3vw, 16px);
+    left: clamp(10px, 3vw, 16px);
+    margin-left: 0;
+  } */
+
+  .ld-logo1 {
+    display: none;
+  }
+  .ld-logo2 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .landing-top {
+    background-position: 35% 20%;
+  }
+  .info-card {
+    max-width: 100%;
+    margin-bottom: clamp(20px, 5vw, 30px);
+  }
+
+  .landingtop-text {
+    position: static;
+    text-align: center;
+    gap: 0;
+  }
+
+  .banner-text {
+    margin: 0;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: clamp(8px, 2vw, 12px);
+  }
 }

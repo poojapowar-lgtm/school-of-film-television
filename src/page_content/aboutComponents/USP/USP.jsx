@@ -4,20 +4,30 @@ import "./usp.css";
 const USP = () => {
   return (
     <div>
- <h2 className="innerpage-title">Industry-Focused Education</h2>
+      <h2 className="innerpage-title">Industry-Focused Education</h2>
       <section className="usp-section">
-        <div className="common-card">       
+        <div className="common-card">
+          <p className="innerpage-hg">
+            Internationally Aligned Cinematic Pedagogy
+          </p>
           <p>
-            Our curriculum is designed in collaboration with industry experts,
-            ensuring students gain practical and job-ready skills.
+            The curriculum at MITSFT is structured in line with globally
+            accepted practices followed by leading international film schools.
+            Emphasis is placed on the complete cinematic workflow development,
+            pre production, production, and post production ensuring students
+            learn filmmaking as a professional, end to end process rather than
+            as isolated subjects.
           </p>
         </div>
 
         <div className="common-card">
-          <p className="innerpage-hg">Global Learning Environment</p>
+          <p className="innerpage-hg"> Extensive Professional Infrastructure</p>
           <p>
-            Experience a diverse and inclusive campus with international
-            exposure, modern infrastructure, and world-class facilities.
+            MITSFT offers over thirty units of professional cameras, editing
+            systems, and sound recording equipment, allowing students to work on
+            a one to one basis. The School also houses a dedicated shooting
+            studio for camera workshops and one of Pune’s largest fully air
+            conditioned shooting floors for large scale productions.
           </p>
         </div>
       </section>

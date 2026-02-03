@@ -1,41 +1,36 @@
-/* Container */
 .recognitions-container {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: clamp(15px, 1.5vw, 20px) 0;
 }
 
-/* Horizontal grid for cards */
 .recognitions-grid {
   display: flex;
-  gap: 50px;
+  gap: clamp(25px, 2vw, 50px);
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Single card */
 .rg-card {
   padding: 0;
-  width: 420px;
+  width: clamp(320px, 40vw, 420px);
 }
 
-
-/* Top image */
 .rec-image {
   width: 100%;
-  height: 300px;
+  height: clamp(160px, 30vw, 300px);
   background-size: cover;
   background-position: center;
 }
 
-/* Name and button */
 .rec-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  gap: 15px;
+  gap: clamp(10px, 2vw, 15px);
+  padding: clamp(12px, 3vw, 15px);
 }
 
 #rec-btn {
   width: max-content;
 }
+

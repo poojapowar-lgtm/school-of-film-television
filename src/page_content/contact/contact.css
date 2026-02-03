@@ -1,31 +1,44 @@
 .contact-us {
-  max-width: 1000px;
+  max-width: clamp(320px, 90vw, 1000px);
   margin: 0 auto;
-  padding: 30px;
+  padding: clamp(20px, 3vw, 30px);
 }
 
+/* Cards grid */
 .contact-cards {
-  margin-top: 50px;
+  margin-top: clamp(30px, 5vw, 50px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: clamp(15px, 3vw, 20px);
   background-color: rgba(47, 49, 54, 0.9);
   box-shadow: 0 6px 10px rgba(255, 255, 255, 0.35);
+  padding: clamp(10px, 2vw, 20px);
 }
 
+/* Individual card */
 .contact-card {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  padding: 30px 0px 20px 20px;
+  gap: clamp(10px, 3vw, 15px);
+  padding: clamp(5px, 1.5vw, 20px) clamp(10px, 2vw, 20px);
 }
 
+/* Icon */
 .contact-card .icon img {
-  width: 30px;
-  height: 30px;
+  width: clamp(24px, 6vw, 30px);
+  height: clamp(24px, 6vw, 30px);
 }
 
+/* Content */
 .contact-card .content span {
   color: silver;
-  padding-right: 10px;
+  padding-right: clamp(5px, 2vw, 10px);
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }

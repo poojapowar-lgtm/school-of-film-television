@@ -1,40 +1,10 @@
-
-
-/* CSS custom properties */
-/* @property --angle {
-  syntax: "<angle>";
-  initial-value: 90deg;
-  inherits: true;
-}
-
-:root {
-  --d: 2500ms;
-  --angle: 90deg;
-  --c1: rgba(168, 239, 255, 1);
-  --c2: rgba(168, 239, 255, 0.1);
-} */
-
 .national-awards {
-  margin: 30px 0;
   padding: 20px 0;
   background-image: url("/public/assets/images/background/frame.webp");
-  background-size: 80%;
-  background-position: bottom ;
+  background-size: 90%;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
-
-/* .gradient-border {
-  border: 4px solid;
-  border-image: conic-gradient(
-      from var(--angle),
-      var(--c2),
-      var(--c1) 0.1turn,
-      var(--c1) 0.15turn,
-      var(--c2) 0.25turn
-    )
-    30;
-  animation: borderRotate var(--d) linear infinite;
-} */
 
 /* Card */
 .awards-card {
@@ -44,25 +14,24 @@
 
 /* Layout */
 .awards-content {
+  gap: clamp(15px, 1.5vw, 30px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 0 clamp(10px, 1.5vw, 50px);
 }
 
 .awards-left {
-  padding-left: 30px;
+  padding-left: clamp(15px, 1.5vw, 30px);
+  height: clamp(200px, 20vw, 350px);
 }
 
 /* List */
 .awards-list {
+  margin: 0;
   list-style: none;
   padding: 0;
   text-align: start;
-}
-
-.awards-list li {
-  padding: 10px 0;
-  font-size: 18px;
 }
 
 .awards-list li::before {
@@ -74,6 +43,7 @@
 .watch-btn-wrapper {
   display: flex;
   justify-content: flex-end;
+  padding-top: clamp(15px, 1.5vw, 30px);
 }
 
 /* Button */
@@ -81,17 +51,17 @@
   margin: auto;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: clamp(10px, 1.5vw, 20px);
   background: none;
   border: none;
   color: goldenrod;
-  font-size: 16px;
+  font-size: clamp(10px, 1.5vw, 16px);
   font-weight: bold;
   cursor: pointer;
 }
 
 .watch-button .icon {
-  font-size: 30px;
+  font-size: clamp(15px, 1.5vw, 30px);
   color: white;
   background-color: red;
   border: 1px solid red;
@@ -101,16 +71,16 @@
 
 /* Image slider */
 .image-slider {
-    padding: 40px 0;
+  padding: clamp(5px, 1vw, 40px) 0;
   position: relative;
-  height: 350px;
+  height: clamp(200px, 20vw, 350px);
   overflow: hidden;
 }
 
 .image-slider img {
+  height: clamp(200px, 20vw, 350px);
   position: absolute;
   inset: 0;
-  width: 100%;
   object-fit: cover;
   opacity: 0;
   transform: translateX(100%);
@@ -131,11 +101,56 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .awards-content {
-    grid-template-columns: 1fr;
+  .national-awards {
+    background-size: 95%;
+    background-position: center 85%;
+    background-repeat: no-repeat;
   }
 
-  .image-slider {
-    height: 220px;
+  .awards-content {
+    order: 2;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 10px;
+  }
+
+  /* Reverse order on smaller screens */
+  .awards-content > *:first-child {
+    order: 2;
+  }
+
+  .awards-content > *:last-child {
+    order: 1;
+  }
+
+  .image-slider img {
+    width: 100%;
   }
 }
+
+/* CSS custom properties */
+/* @property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+} */
+
+/* .gradient-border {
+  border: 4px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite;
+} */

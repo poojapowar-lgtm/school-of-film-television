@@ -52,7 +52,7 @@
 }
 
 .nav-logos img {
-  height: clamp(45px, 2vw, 80px);
+    height: clamp(45px, 7vw, 80px);
   width: auto;
 }
 /* Menu */

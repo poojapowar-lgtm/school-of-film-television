@@ -7,6 +7,7 @@ import ProgramHighlights from "../page_content/landingComponents/programHighligh
 import AdmissionDetails from "../page_content/landingComponents/admissiondetails/AdmissionDetails";
 import DividerWithTitle from "../components/reuseable_components/DividerWithTitle/DividerWithTitle";
 import Specialization from "../page_content/course/specialization/Specialization";
+import Footer from "../components/footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <Programs />
       <ProgramHighlights />
       <AdmissionDetails />
+      <Footer/>
     </>
   );
 };

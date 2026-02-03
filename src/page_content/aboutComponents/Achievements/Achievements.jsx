@@ -13,7 +13,8 @@ const Achievements = () => {
     "/assets/images/film_posters/award-films/Koyta.webp",
   ];
   return (
-    <div className="achievements">
+    <div className=".page-content ">
+       <div className="achievements">
       <h2 className="innerpage-title">Achievements</h2>
         {/* First set of images */}
         <div className="ach-images-grid">
@@ -63,6 +64,8 @@ const Achievements = () => {
         </div>
       </section>
     </div>
+    </div>
+   
   );
 };
 

@@ -1,26 +1,26 @@
 .vishwaraj-wrapper {
-  padding-bottom: 22%;
+  padding-bottom: 20%;
   background-image: url("/public/assets/images/background/vishwaraj2.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+   /* Overlay for opacity */
+  background-color: rgba(0, 0, 0, 0.5); /* adjust alpha 0.4 = 40% opacity */
+  background-blend-mode: overlay; /* blend overlay on background image */
 }
 
 /* Layout */
 .studio-content {
   display: flex;
   justify-content: flex-end;
-  /* gap: 60px; */
-  padding: 20px;
-  /* align-items: center; */
-  /* background-color: #20B2AA; */
+  padding: clamp(12px, 3vw, 20px);
 }
 
 /* Image container */
 .studio-imgs {
   position: relative;
-  width: 700px;
-  height: 400px;
+  width: 750px;
+  height: clamp(200px, 45vw, 400px);
   overflow: hidden;
   border: 1px solid white;
 }
@@ -48,6 +48,7 @@
   transform: translateX(100%);
   z-index: 1;
 }
+
 /* Animation */
 @keyframes borderRotate {
   100% {
@@ -57,12 +58,18 @@
 
 .studio-section {
   position: relative;
-  padding: 0 40px;
-  max-width: 550px;
+  padding: 0 clamp(10px, 2vw, 40px);
+  max-width: 750px;
   text-align: right;
 }
 
 #studio-btn {
   margin-left: auto;
   display: inline-block;
+}
+
+@media (max-width: 768px){
+  .studio-text{
+    margin: 0;
+  }
 }

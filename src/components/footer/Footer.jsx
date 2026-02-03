@@ -27,10 +27,10 @@ const Footer = () => {
           </div>
 
           <p className="footer-address">
-            School of Film & Television, MIT-ADT Campus, <br />
-            Rajbaugh, Solapur-Pune Highway, Near Bharat Petrol Pump,
+            School of Film & Television, MIT-ADT Campus,
             <br />
-            Loni Kalbhor, Maharashtra- 412201
+            Rajbaugh, Solapur-Pune Highway, Near Bharat <br /> Petrol Pump, Loni
+            Kalbhor, Maharashtra- 412201
           </p>
 
           <div className="footer-map">
@@ -39,10 +39,6 @@ const Footer = () => {
               loading="lazy"
             ></iframe>
           </div>
-          <p className="footer-bottom">
-            Copyright © 2026 All rights reserved by Website Department MIT-ADT
-            University.
-          </p>
         </div>
 
         {/* SECTION 2 */}
@@ -55,19 +51,22 @@ const Footer = () => {
               <li>News</li>
               <li>Courses</li>
             </ul>
+            {/* Contact + Admission Row */}
+            <div className="contact-admission">
+              <ul className="page-list">
+                <span className="footer-heading">Contact Us</span>
+                <li>+91-96655 43913</li>
+                <li>+91-93253 40706</li>
+              </ul>
 
-            <ul className="page-list">
-              <span className="footer-heading">Contact Us</span>
-              <li>+91-96655 43913</li>
-              <li>+91-93253 40706</li>
-            </ul>
-
-            <ul className="page-list">
-              <span className="footer-heading">For Admission</span>
-              <li>admission.sft@mituniversity.edu.in</li>
-              <li>shraddha.kohad@mituniversity.edu.in</li>
-            </ul>
+              <ul className="page-list">
+                <span className="footer-heading">For Admission</span>
+                <li>admission.sft@mituniversity.edu.in</li>
+                <li>shraddha.kohad@mituniversity.edu.in</li>
+              </ul>
+            </div>
           </div>
+
 
           <div className="footer-social">
             {socialIconsData.map(({ url, network, bgColor }, index) => (
@@ -98,6 +97,10 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <p className="footer-bottom">
+        Copyright © 2026 All rights reserved by Website Department MIT-ADT
+        University.
+      </p>
     </footer>
   );
 };

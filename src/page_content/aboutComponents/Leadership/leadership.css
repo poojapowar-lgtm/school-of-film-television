@@ -1,8 +1,7 @@
-
 /* Main Layout */
 .leadership-content {
   display: flex;
-  gap: 50px;
+  gap: clamp(10px, 1vw, 20px);
   align-items: flex-start;
 }
 
@@ -13,6 +12,7 @@
 
 /* Right profile */
 .leadership-profile {
+      margin: 0 auto;
   flex: 1;
   text-align: center;
 }
@@ -20,10 +20,13 @@
 .leader-image {
   width: 60%;
   height: auto;
-  border-radius: 12px;
-  margin-bottom: 12px;
+ border-radius: clamp(8px, 2vw, 12px);
+  margin-bottom: clamp(8px, 2vw, 12px);
 }
 
-
-
-
+@media (max-width: 780px) {
+  .leadership-content,
+  .leadership-text {
+    flex-direction: column-reverse;
+  }
+}

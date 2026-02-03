@@ -1,5 +1,5 @@
 .faculty-container {
-  padding: 40px 20px;
+    padding: clamp(20px, 2vw, 40px) clamp(15px, 1.5vw, 20px);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -7,6 +7,5 @@
 .faculty-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  gap: clamp(25px, 3vw, 40px);
 }
-

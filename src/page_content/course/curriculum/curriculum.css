@@ -1,19 +1,38 @@
 
-/* Layout */
+/* Layout - Desktop */
 .curriculum-content {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  gap: clamp(24px, 4vw, 48px);
   align-items: center;
 }
 
 /* Right Image */
 .curriculum-right img {
-  width:500px;
+  width: clamp(240px, 40vw, 500px);
   height: auto;
-  border-radius: 18px;
+  border-radius: clamp(12px, 2vw, 18px);
   display: block;
   object-fit: cover;
-   box-shadow: 0 10px 20px rgba(209, 208, 208, 0.6);
+  box-shadow: 0 10px 20px rgba(209, 208, 208, 0.6);
+}
+
+
+@media (max-width: 768px) {
+  .curriculum-content {
+    grid-template-columns: 1fr; 
+    gap: clamp(16px, 4vw, 32px);
+  }
+
+  .curriculum-right {
+    order: -1; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .curriculum-right img {
+    width: 100%;
+    max-width: clamp(240px, 90vw, 500px);
+  }
 }

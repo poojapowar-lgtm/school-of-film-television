@@ -13,13 +13,13 @@ const LandingTop = () => {
         <div className="logos">
           <img
             src="/assets/icons/mit_logo.webp"
-            alt="Logo 2"
-            className="ld-logo2"
+            alt="Logo 1"
+            className="ld-logo1"
           />
           <img
             src="/assets/icons/film_logo.webp"
-            alt="Logo 1"
-            className="ld-logo1"
+            alt="Logo 2"
+            className="ld-logo2"
           />
           <h1 className="logo-title">
             School Of <br />

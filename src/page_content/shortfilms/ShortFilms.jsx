@@ -56,7 +56,7 @@ const ShortFilm = () => {
 
             <div className="filters">
               <select
-                className="awards-button"
+                className="button"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               >
@@ -66,7 +66,7 @@ const ShortFilm = () => {
               </select>
 
               <select
-                className="awards-button"
+                className="button"
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
               >
@@ -89,11 +89,11 @@ const ShortFilm = () => {
         {/* Section 2 */}
         <section className="shortfilm-section">
           <div className="section-header">
-            <h2 className="innerpage-title "> Award Winning Short Films</h2>
+            <h2 className="innerpage-title"> Award Winning Short Films</h2>
 
             <div className="filters">
               <select
-                className="awards-button"
+                className="button"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               >
@@ -102,7 +102,7 @@ const ShortFilm = () => {
               </select>
 
               <select
-                className="awards-button"
+                className="button"
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
               >

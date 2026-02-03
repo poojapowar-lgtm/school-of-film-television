@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-bottom: 80px;
+  margin-bottom: clamp(20px, 2vw, 80px);
 }
 
 .history-row.reverse {
@@ -20,8 +20,15 @@
 
 .history-image img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: clamp(8px, 2vw, 12px);
   object-fit: cover;
 }
 
 
+@media (max-width: 1440px) {
+  .history-row,
+  .history-row.reverse {
+    flex-direction: column;
+  }
+
+}

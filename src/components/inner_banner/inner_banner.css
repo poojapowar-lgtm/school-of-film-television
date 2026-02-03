@@ -14,7 +14,7 @@
 .inner-bnr::before {
   content: "";
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
   background: rgba(0, 20, 60, 0.45);
   z-index: 1;
 }
@@ -29,7 +29,7 @@
 
 /* Main Title (H2) */
 .inner-bnr-title{
-  font-size: clamp(24px, 4vw, 45px);
+  font-size: clamp(22px, 4vw, 45px);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -40,7 +40,7 @@
 
 /* Subtitle (H3) */
 .inner-bnr-subtitle{
-  font-size: clamp(16px, 2.5vw, 28px);
+  font-size: clamp(14px, 2.5vw, 28px);
   font-weight: 400;
   margin-top: clamp(6px, 1.2vw, 14px);
   color: #e0e6f5;

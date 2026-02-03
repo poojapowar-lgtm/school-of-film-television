@@ -1,56 +1,56 @@
-.features-section {
-  padding: 60px 20px;
-  margin: 0 auto;
-}
-
 .features-grid {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: clamp(10px, 2vw, 20px);
 }
 
+/* Card */
 .feature-card {
-  padding: 30px 10px;
+  flex: 1 1 clamp(150px, 12vw, 200px);
+  max-width: 250px;
+  padding: clamp(16px, 3vw, 30px) clamp(10px, 2vw, 20px);
   text-align: center;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
+
 
 .feature-card:hover {
   transform: translateY(-6px);
 }
 
+/* Icon */
 .feature-icon {
   background-color: white;
-  width: 70px;
-  height: 70px;
+  width: clamp(48px, 12vw, 70px);
+  height: clamp(48px, 12vw, 70px);
   border-radius: 50%;
-  padding: 10px;
+  padding: clamp(6px, 1.5vw, 10px);
   object-fit: cover;
-  margin-bottom: 16px;
+  margin-bottom: clamp(10px, 2vw, 16px);
 }
+
 
 /* unique features */
 .unique-features {
-  padding: 60px 20px;
+  padding: clamp(30px, 6vw, 60px) clamp(12px, 4vw, 20px);
 }
 
 .uq-features-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1200px;
+  max-width: clamp(450px, 90vw, 1200px);
   margin: 0 auto;
 }
 
+/* Card */
 .uq-feature-card {
   width: 60%;
-  /* Animation */
   opacity: 0;
-  transform: translateY(40px);
-  animation: slideIn 1.5s forwards;
+  transform: translateY(clamp(20px, 5vw, 40px));
+  animation: slideIn clamp(0.8s, 1.5s, 1.5s) forwards;
 }
+
 
 .uq-feature-card.left {
   align-self: flex-start;
@@ -69,9 +69,17 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .feature-card {
     width: 100%;
     align-self: center !important;
   }
 }
+
+
+@media (max-width: 600px) {
+  .feature-card {
+    flex: 0 0 calc(50% - clamp(8px, 2vw, 16px));
+    max-width: calc(45% - clamp(8px, 2vw, 16px));
+  }
+} */

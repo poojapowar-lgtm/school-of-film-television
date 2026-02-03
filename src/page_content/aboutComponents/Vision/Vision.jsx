@@ -9,20 +9,14 @@ const Vision = () => {
       icon: <FaEye size={60} />,
       title: "Our Vision",
       description:
-        "To be a centre of excellence in cinema and screen performance education, advancing the art and craft of filmmaking through rigorous practice, innovation, and strong industry engagement, while nurturing students into accomplished filmmakers and performers.",
+        "To nurture creative storytellers and performers who shape the future of cinema and television through innovation, imagination, and global perspective.",
     },
     {
       icon: <TbTargetArrow size={60} />,
       title: "Our Mission",
       description:
-        "To offer internationally benchmarked, production-driven education focused exclusively on cinema and screen-based storytelling, supported by professional infrastructure, experienced faculty, and strong industry engagement. The school aims to develop student’s aesthetic sensibility, technical expertise, creative discipline, and collaborative skills, preparing them to work confidently across all platforms where cinema is created and experienced.",
-    },
-    {
-      icon: <FaAward size={60} />,
-      title: "Our Values",
-      description:
-        "To develop industry-ready filmmakers and screen performers by imparting internationally benchmarked education rooted in production-based learning. The school aims to cultivate strong aesthetic sensibility, technical expertise, critical thinking, and collaborative skills—enabling students to create meaningful cinematic works and adapt to evolving global film, television, and OTT industries. ",
-    },
+        "To provide a dynamic learning environment that blends artistic expression, technical mastery, and industry exposure-empowering students to excel both behind and in front of the camera.",
+    }
   ];
 
   return (
@@ -31,7 +25,7 @@ const Vision = () => {
       <section className="vision-section" id="vision">
         <div className="vision-cards">
           {visionData.map((item, index) => (
-            <div className="common-card" style={{maxWidth:"400px"}} key={index}>
+            <div className="common-card" style={{maxWidth:"350px"}} key={index}>
               <div className="vision-icon">{item.icon}</div>
               <h5 className="common-title">{item.title}</h5>
               <p>{item.description}</p>

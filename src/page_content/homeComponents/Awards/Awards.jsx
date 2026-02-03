@@ -70,7 +70,7 @@ const Awards = () => {
 
       {/* First Row (5 cards) */}
       <div className="awards-row five">
-        {awardsData.slice(0, 5).map((item, index) => (
+        {awardsData.slice(0, 4).map((item, index) => (
           <div
             key={index}
             className="award-card"
@@ -87,7 +87,7 @@ const Awards = () => {
 
       {/* Second Row (4 cards) */}
       <div className="awards-row four">
-        {awardsData.slice(5, 9).map((item, index) => (
+        {awardsData.slice(4, 7).map((item, index) => (
           <div
             key={index}
             className="award-card"
