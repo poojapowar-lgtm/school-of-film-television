@@ -170,6 +170,9 @@
     white-space: nowrap;
   }
 
+  .footer-social {
+justify-content: center;
+} 
   .footer-right {
     order: -1; /* moves it to top / first */
   }
