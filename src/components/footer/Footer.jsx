@@ -67,7 +67,6 @@ const Footer = () => {
             </div>
           </div>
 
-
           <div className="footer-social">
             {socialIconsData.map(({ url, network, bgColor }, index) => (
               <SocialIcon
@@ -90,10 +89,17 @@ const Footer = () => {
           >
             Join Now
           </button>
-          <p className="footer-text vertical-words">
+          {/* <p className="footer-text vertical-words">
             <span>Lights</span>
             <span>Camera</span>
             <span>and Action</span>
+          </p> */}
+          <p className="footer-text vertical-words">
+            <img
+              src="/assets/images/background/footer_icon.svg"
+              alt="Lights Camera and Action"
+              className="vertical-image"
+            />
           </p>
         </div>
       </div>

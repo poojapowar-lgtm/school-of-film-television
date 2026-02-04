@@ -18,7 +18,7 @@
 /* Cells */
 .admission-table th,
 .admission-table td {
-  font-size: clamp(12px, 1.2vw, 18px);
+  font-size: clamp(11.5px, 1.2vw, 18px);
   font-weight: 500;
   border: 1px solid #ccc;
   padding: clamp(10px, 2.5vw, 15px) clamp(12px, 3vw, 20px);

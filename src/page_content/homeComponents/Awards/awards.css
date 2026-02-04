@@ -17,7 +17,7 @@
   max-width: 65%;
   gap: clamp(10px, 2vw, 30px);
   margin: 0 auto;
-  padding: clamp(20px, 2vw, 30px);
+  padding: clamp(1px, 2vw, 30px);
 }
 
 .awards-row.four {
@@ -78,19 +78,19 @@
 
 .carousel-wrapper {
   overflow: hidden;
+  width: 100%;
   padding: clamp(15px, 4vw, 30px);
-  margin: 0 auto;
-  z-index: 2;
 }
 
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll clamp(15s, 4vw, 20s) linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .carousel-track img {
   width: clamp(180px, 40vw, 280px);
+   aspect-ratio: 2 / 3;
   object-fit: cover;
   margin-right: clamp(15px, 4vw, 30px);
   flex-shrink: 0;

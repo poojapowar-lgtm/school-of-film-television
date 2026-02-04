@@ -21,7 +21,7 @@
 }
 
 .film-logo {
-  width: clamp(50px, 10vw, 120px);
+  width: clamp(45px, 10vw, 120px);
 }
 
 /* Text block */
@@ -38,12 +38,11 @@
 
 .main-title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: clamp(22px, 4vw, 55px);
+  font-size: clamp(20px, 4vw, 55px);
   font-weight: 500;
   letter-spacing: clamp(2px, 0.6vw, 5px);
   color: #f9be08;
   margin: 0;
-  text-shadow: 4px 0 6px rgba(243, 242, 242, 0.4);
 }
 
 /* Right logos */
@@ -56,9 +55,12 @@
 
 .mit-logo,
 .naac-logo {
-  width: clamp(50px, 10vw, 220px);
+  width: clamp(45px, 10vw, 220px);
 }
 
+.naac-logo {
+  background-color: white;
+}
 /* Hamburger */
 .menu-btn {
   background: none;

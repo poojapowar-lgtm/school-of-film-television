@@ -22,10 +22,10 @@ const VishwarajStudio = () => {
   }, [images.length]);
 
   return (
-    <div>
+    <div className="vishwaraj-wrapper">
       <DividerWithTitle title="Where Student Sets Become Real Stories" />
       <h3 className="subtitle">Vishwaraj Studio</h3>
-      <section className="vishwaraj-wrapper">
+      <section >
         {/* Content */}
         <div className="studio-content">
           {/* left sliding images */}

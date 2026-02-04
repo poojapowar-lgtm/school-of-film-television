@@ -8,36 +8,41 @@ import DividerWithTitle from "../../../components/reuseable_components/DividerWi
 
 const alumniData = [
   {
-    name: "Rahul Sharma",
-    course: "B.Sc Filmmaking",
-    video:
-      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    name: "Aishwarya Pardeshi ",
+    course: "B.Sc Filmmaking ( Specialization : Cinematography)",
+
+    video: "https://www.youtube.com/watch?v=jObopxaHBQ8",
+  },
+   {
+    name: "Gunjan Jaywant",
+    course: "M.Sc Filmmaking ( Specialization : Cinematography)",
+    video: "https://www.youtube.com/watch?v=-wLlPxmT00M",
   },
   {
-    name: "Ananya Patil",
-    course: "MBA Media Management",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    name: "Harsh Balpande",
+    course: "B.Sc Filmmaking ( Specialization : film editing)",
+    video: "https://www.youtube.com/embed/0RWqcbW7jxc",
   },
   {
-    name: "Karan Mehta",
-    course: "B.Des Visual Communication",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    name: "Jay Agarwal",
+    course: "B.Sc Filmmaking ( Specialization : Screenplay Writing & Direction)",
+    video: "https://www.youtube.com/watch?v=LKUwDwdpqYU",
   },
   {
-    name: "Rahul Sharma",
-    course: "B.Sc Filmmaking",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    name: "Bhushan Gokhale",
+    course: "B.Sc Filmmaking ( Specialization : Direction)",
+    video: "https://www.youtube.com/watch?v=hw0-UhiiRQ8",
   },
   {
-    name: "Ananya Patil",
-    course: "MBA Media Management",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    name: "Vishesh Iyer",
+    course: "B.Sc Filmmaking ( Specialization : Direction)",
+    video: "https://www.youtube.com/watch?v=5PvkUzzoNZ4",
   },
   {
-    name: "Karan Mehta",
-    course: "B.Des Visual Communication",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
+    name: "Siddhant Temkar",
+    course: "B.Sc Filmmaking ( Specialization : Cinematography)",
+    video: "https://www.youtube.com/watch?v=m70MbrObNyY",
+  }
 ];
 
 const AlumniSpeak = () => {
@@ -57,6 +62,11 @@ const AlumniSpeak = () => {
     });
   };
 
+  const getEmbedUrl = (url) => {
+  const videoId = url.split("v=")[1]?.split("&")[0] || url.split("/").pop();
+  return `https://www.youtube.com/embed/${videoId}`;
+};
+
   return (
     <section className="alumni-speak">
       <DividerWithTitle title="Alumni Speak" />
@@ -71,7 +81,7 @@ const AlumniSpeak = () => {
             <div className="alumni-card" key={index}>
               <div className="video-box">
                 <iframe
-                  src={item.video}
+                  src={getEmbedUrl(item.video)}
                   title={item.name}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

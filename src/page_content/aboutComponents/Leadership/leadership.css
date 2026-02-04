@@ -1,7 +1,6 @@
 /* Main Layout */
 .leadership-content {
   display: flex;
-  gap: clamp(10px, 1vw, 20px);
   align-items: flex-start;
 }
 

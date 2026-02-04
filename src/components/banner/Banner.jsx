@@ -1,10 +1,12 @@
 import { GoDotFill } from "react-icons/go";
 import { useRef, useEffect, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 import "./banner.css";
 
 const Banner = () => {
+  const navigate = useNavigate();
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
 
@@ -23,7 +25,7 @@ const Banner = () => {
     setIsMuted(!isMuted);
   };
   return (
-    <div className="banner">
+    <div>
       {/* Banner */}
       <div className="banner">
         <section className="bnr-video">
@@ -35,7 +37,8 @@ const Banner = () => {
               />
             </video> */}
             <img
-              src="/assets/images/banner/bannerhome1.png"
+              // src="/assets/images/banner/bannerhome1.png"
+                src="/assets/images/banner/ankit_bnr.svg"
               alt="Short Film Banner"
               className="bnr-image"
             />
@@ -47,19 +50,23 @@ const Banner = () => {
                   Dream <GoDotFill className="dot-icon" /> Direct
                   <GoDotFill className="dot-icon" /> Deliver
                 </h2> */}
-                   <h3 className="banner-title">Our Alumini</h3>
+                {/* <h3 className="banner-title">Our Alumini</h3>
                 <h3 className="banner-title">Mr.Ankit Bhat (Associate DoP)</h3>
-                <p className="banner-text">On the Set Of Feature Film</p>
-                <button className="button">More Alumini Work</button>
-
+                <p className="banner-text">On the Set Of Feature Film</p> */}
+                <button
+                  className="button"
+                  onClick={() => navigate("/short-film")}
+                >
+                  More Alumni Work
+                </button>
                 {/* SOUND BUTTON */}
-                <button onClick={toggleMute} className="volume-btn">
+                {/* <button onClick={toggleMute} className="volume-btn">
                   {isMuted ? (
                     <VolumeX size={25} color="#fff" />
                   ) : (
                     <Volume2 size={25} color="#fff" />
                   )}
-                </button>
+                </button> */}
               </div>
 
               {/* <div className="banner-right">

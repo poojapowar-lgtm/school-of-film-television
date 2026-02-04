@@ -11,12 +11,13 @@
   max-width: fit-content;
   justify-content: space-between;
   margin: 0 auto;
+  gap: clamp(10px, 15vw, 150px);
 }
 
-.footer-section {
+/* .footer-section {
   padding: 8px 0;
   margin: 0 clamp(20px, 2vw, 50px);
-}
+} */
 
 /* LEFT */
 .footer-logos {
@@ -53,7 +54,7 @@
 /* CENTER */
 .footer-links {
   display: flex;
-  gap: 20px;
+  gap: 100px;
 }
 
 .footer-links ul {
@@ -131,6 +132,9 @@
 }
 
 @media (max-width: 1280px) {
+  .footer-top {
+    gap: clamp(5px, 1vw, 50px);
+  }
   .footer-links {
     gap: 0;
   }
@@ -166,13 +170,13 @@
   }
   .footer-links .page-list li {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 3px;
     white-space: nowrap;
   }
 
   .footer-social {
-justify-content: center;
-} 
+    justify-content: center;
+  }
   .footer-right {
     order: -1; /* moves it to top / first */
   }
