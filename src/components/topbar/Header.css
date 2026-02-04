@@ -55,7 +55,7 @@
 
 .mit-logo,
 .naac-logo {
-  width: clamp(40px, 10vw, 220px);
+  width: clamp(35px, 10vw, 220px);
 }
 
 .naac-logo {
