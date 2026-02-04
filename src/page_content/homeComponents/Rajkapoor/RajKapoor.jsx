@@ -12,12 +12,12 @@ const RajKapoor = () => {
             <div className="image-wrapper">
               <img
                 className="main-image"
-                src="/assets/images/home/raj_kapoor_bungalow.webp"
+                src="/assets/images/home/raj_kapoor_bungalow.avif"
                 alt="Raj Kapoor"
               />
               <img
                 className="inner-image"
-                src="/assets/images/home/raj_kapoor.webp"
+                src="/assets/images/home/rj.png"
                 alt="Raj Kapoor"
               />
             </div>

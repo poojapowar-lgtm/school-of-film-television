@@ -14,10 +14,10 @@
 
 .awards-row.five {
   grid-template-columns: repeat(4, 1fr);
-  max-width: 65%;
+  max-width: clamp(65%, 40vw, 90%);
   gap: clamp(10px, 2vw, 30px);
   margin: 0 auto;
-  padding: clamp(1px, 2vw, 30px);
+  padding: clamp(1px, 10vw, 50px) 0;
 }
 
 .awards-row.four {
@@ -112,7 +112,7 @@
   animation-play-state: paused;
 }
 
-@media (min-width: 1024px) and (max-width: 1336px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
   .awards-row.five {
     max-width: 100%;
   }

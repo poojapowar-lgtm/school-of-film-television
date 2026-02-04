@@ -131,9 +131,9 @@
   color: goldenrod;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1400px) {
   .footer-top {
-    gap: clamp(5px, 1vw, 50px);
+           gap: clamp(50px, 10vw, 100px)
   }
   .footer-links {
     gap: 0;
