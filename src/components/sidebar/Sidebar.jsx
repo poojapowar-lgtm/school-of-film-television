@@ -2,17 +2,31 @@
 // import { Link, useLocation } from "react-router-dom";
 // import "./sidebar.css";
 
-// const Sidebar = ({ menuItems }) => {
+// const Sidebar = ({ menuItems, onItemClick }) => {
 //   const location = useLocation();
 
 //   return (
 //     <div className="sidebar">
 //       <ul>
-//         {menuItems.map((item) => {
-//           const isActive = location.pathname.includes(item.path);
+//         {menuItems.map((item, index) => {
+//           const isActive =
+//             item.path && location.pathname.includes(item.path);
+
 //           return (
-//             <li key={item.path} className={isActive ? "active" : ""}>
-//               <Link to={item.path}>{item.name}</Link>
+//             <li
+//              key={item.path || item.name}
+//               className={isActive ? "active" : ""}
+//               onClick={
+//                 item.ref && onItemClick
+//                   ? () => onItemClick(item.ref)
+//                   : undefined
+//               }
+//             >
+//               {item.path ? (
+//                 <Link to={item.path}>{item.name}</Link>
+//               ) : (
+//                 <span className="sidebar-link">{item.name}</span>
+//               )}
 //             </li>
 //           );
 //         })}
@@ -23,41 +37,62 @@
 
 // export default Sidebar;
 
-import React from "react";
+
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { CgMenuGridR } from "react-icons/cg";
+import { IoCloseOutline } from "react-icons/io5";
 import "./sidebar.css";
 
 const Sidebar = ({ menuItems, onItemClick }) => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleItemClick = (item) => {
+    if (item.ref && onItemClick) {
+      onItemClick(item.ref);
+    }
+    setIsOpen(false); // close sidebar on mobile after click
+  };
 
   return (
-    <div className="sidebar">
-      <ul>
-        {menuItems.map((item, index) => {
-          const isActive =
-            item.path && location.pathname.includes(item.path);
+    <>
+      {/* Mobile menu open icon */}
+      <div className="mobile-menu-icon" onClick={() => setIsOpen(true)}>
+        <CgMenuGridR />
+      </div>
 
-          return (
-            <li
-             key={item.path || item.name}
-              className={isActive ? "active" : ""}
-              onClick={
-                item.ref && onItemClick
-                  ? () => onItemClick(item.ref)
-                  : undefined
-              }
-            >
-              {item.path ? (
-                <Link to={item.path}>{item.name}</Link>
-              ) : (
-                <span className="sidebar-link">{item.name}</span>
-              )}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+      {/* Sidebar */}
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        {/* Mobile close icon */}
+        <div className="mobile-close-icon" onClick={() => setIsOpen(false)}>
+          <IoCloseOutline />
+        </div>
+
+        <ul>
+          {menuItems.map((item) => {
+            const isActive =
+              item.path && location.pathname.includes(item.path);
+
+            return (
+              <li
+                key={item.path || item.name}
+                className={isActive ? "active" : ""}
+                onClick={() => handleItemClick(item)}
+              >
+                {item.path ? (
+                  <Link to={item.path}>{item.name}</Link>
+                ) : (
+                  <span className="sidebar-link">{item.name}</span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </>
   );
 };
 
 export default Sidebar;
+

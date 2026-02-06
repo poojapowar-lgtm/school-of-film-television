@@ -11,15 +11,15 @@
 
 /* Right profile */
 .leadership-profile {
-      margin: 0 auto;
+  margin: 0 auto;
   flex: 1;
   text-align: center;
 }
 
 .leader-image {
-  width: 60%;
+  width: 80%;
   height: auto;
- border-radius: clamp(8px, 2vw, 12px);
+  border-radius: clamp(8px, 2vw, 12px);
   margin-bottom: clamp(8px, 2vw, 12px);
 }
 

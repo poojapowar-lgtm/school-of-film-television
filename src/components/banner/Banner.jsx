@@ -38,7 +38,7 @@ const Banner = () => {
             </video> */}
             <img
               // src="/assets/images/banner/bannerhome1.png"
-                src="/assets/images/banner/ankit_bnr.svg"
+              src="/assets/images/banner/ankit_bnr.svg"
               alt="Short Film Banner"
               className="bnr-image"
             />
@@ -55,6 +55,7 @@ const Banner = () => {
                 <p className="banner-text">On the Set Of Feature Film</p> */}
                 <button
                   className="button"
+                  id="bnr-btn"
                   onClick={() => navigate("/short-film")}
                 >
                   More Alumni Work

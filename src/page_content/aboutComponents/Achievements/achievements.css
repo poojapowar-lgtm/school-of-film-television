@@ -6,7 +6,7 @@
 }
 
 .ach-image {
-  max-width: clamp(150px, 45vw, 450px);
+     max-width: clamp(125px, 30vw, 450px);
   object-fit: cover;
   border-radius: clamp(6px, 1vw, 8px);
   margin: clamp(12px, 3vw, 20px) 0;

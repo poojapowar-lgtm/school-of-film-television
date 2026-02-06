@@ -114,11 +114,11 @@
 
 @media (min-width: 1024px) and (max-width: 1400px) {
   .awards-row.five {
-    max-width: 100%;
+    max-width: 93%;
   }
 
   .awards-row.four {
-    max-width: 70%;
+    max-width: 68%;
   }
 }
 

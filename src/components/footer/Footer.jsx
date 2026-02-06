@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import { useNavigate } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import { LuArrowUp } from "react-icons/lu";
 import socialIconsData from "../reuseable_components/socialIconsData";
 
 const Footer = () => {
@@ -103,9 +104,17 @@ const Footer = () => {
           </p>
         </div>
       </div>
+       <span
+          className="back-to-top"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Back to top"
+        >
+         <LuArrowUp />
+        </span>
       <p className="footer-bottom">
         Copyright © 2026 All rights reserved by Website Department MIT-ADT
         University.
+       
       </p>
     </footer>
   );

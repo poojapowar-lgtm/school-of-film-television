@@ -1,5 +1,4 @@
 .whythis-container {
-  margin: 0 auto;
   padding: clamp(30px, 6vw, 60px) clamp(12px, 4vw, 20px);
   max-width: clamp(320px, 95vw, 1200px);
 }

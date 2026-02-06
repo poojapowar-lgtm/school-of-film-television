@@ -20,7 +20,7 @@
 
 /* Icon */
 .feature-icon {
-  background-color: white;
+  background-color: whitesmoke;
   width: clamp(48px, 12vw, 70px);
   height: clamp(48px, 12vw, 70px);
   border-radius: 50%;

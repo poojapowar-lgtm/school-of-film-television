@@ -4,31 +4,38 @@ import "./features.css";
 
 const featuresDataOne = [
   {
-    src: "/assets/images/icons/production.webp",
+    // src: "/assets/images/icons/production.webp",
+    src: "/assets/images/icons/new_icons/productivity.png",
     title: "Production Based Learning Framework",
   },
   {
-    src: "/assets/images/icons/internationally.webp",
+    // src: "/assets/images/icons/internationally.webp",
+    src: "/assets/images/icons/new_icons/international.png",
     title: "Internationally Benchmarked Curriculum",
   },
   {
-    src: "/assets/images/icons/studio.webp",
+    // src: "/assets/images/icons/studio.webp",
+    src: "/assets/images/icons/new_icons/video-camera.png",
     title: "One of the Largest Professional Shooting Studios",
   },
   {
-    src: "/assets/images/icons/headeset.webp",
+    // src: "/assets/images/icons/headeset.webp",
+    src: "/assets/images/icons/new_icons/gimbal.png",
     title: "One to One Access to Professional Equipment",
   },
   {
-    src: "/assets/images/icons/industry.webp",
+    // src: "/assets/images/icons/industry.webp",
+    src: "/assets/images/icons/new_icons/movie.png",
     title: "Strong Industry Interface & Festival Exposure",
   },
   {
-    src: "/assets/images/icons/legacy.webp",
+    // src: "/assets/images/icons/legacy.webp",
+    src: "/assets/images/icons/new_icons/legacy.png",
     title: "Legacy Driven Learning Enviroment",
   },
   {
-    src: "/assets/images/icons/creative.webp",
+    // src: "/assets/images/icons/creative.webp",
+    src: "/assets/images/icons/new_icons/idea.png",
     title: "Intergrated Multidisciplinary Creative Campus",
   },
 ];

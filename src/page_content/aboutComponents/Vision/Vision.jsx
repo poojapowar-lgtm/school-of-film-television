@@ -22,7 +22,7 @@ const Vision = () => {
   return (
     <div>
       <h2 className="innerpage-title">Vision, Mission & Objectives</h2>
-      <section className="vision-section" id="vision">
+      <section className="vision-section">
         <div className="vision-cards">
           {visionData.map((item, index) => (
             <div className="common-card" style={{maxWidth:"350px"}} key={index}>

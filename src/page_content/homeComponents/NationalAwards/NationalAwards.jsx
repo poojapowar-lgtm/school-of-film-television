@@ -38,10 +38,16 @@ const NationalAwards = () => {
               </ul>
 
               <div className="watch-btn-wrapper">
-              <button className="watch-button">
-                Watch Movie Now
-                <CgPlayButton className="icon" />
-              </button>
+                <a
+                  href="https://www.youtube.com/watch?v=YMSB0N0OgwY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="watch-button">
+                    Watch Movie Now
+                    <CgPlayButton className="icon" />
+                  </button>
+                </a>
               </div>
             </div>
 

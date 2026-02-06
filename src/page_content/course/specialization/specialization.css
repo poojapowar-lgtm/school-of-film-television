@@ -21,6 +21,6 @@
   height: clamp(40px, 5vw, 80px);
   object-fit: contain;
   border-radius: 50%;
-  background: goldenrod;
+  background: whitesmoke;
   padding: clamp(6px, 2vw, 10px);
 }

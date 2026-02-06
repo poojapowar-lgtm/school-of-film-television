@@ -4,21 +4,19 @@
   padding: 0;
 }
 
-/* Sidebar list item spacing + responsive font */
 .sidebar li {
   margin-bottom: clamp(8px, 1vw, 14px);
-  font-size: clamp(11px, 1.2vw, 18px);
+  font-size: clamp(11.5px, 1.2vw, 18px);
   font-weight: 500;
   text-align: start;
 }
 
-/* Sidebar links */
 .sidebar li a,
 .sidebar li .sidebar-link {
   text-decoration: none;
   color: #c4c4c4;
   display: block;
-  padding: clamp(6px, 0.8vw, 10px) 0 clamp(6px, 0.8vw, 10px)
+  padding: clamp(3px, 0.8vw, 10px) 0 clamp(6px, 0.8vw, 10px)
     clamp(20px, 3vw, 40px);
   line-height: clamp(20px, 3vw, 30px);
   transition:
@@ -27,19 +25,84 @@
     transform 0.2s ease;
 }
 
-/* Active + hover */
 .sidebar li.active a,
 .sidebar li a:hover {
   color: goldenrod;
 }
 
-/* Hover + active state for scroll items */
 .sidebar li.active .sidebar-link,
 .sidebar li .sidebar-link:hover {
   color: goldenrod;
 }
 
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: goldenrod;
+  padding: 10px 0 0 10px;
+}
+
+/* Close icon inside sidebar */
+.mobile-close-icon {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Mobile behavior */
 @media (max-width: 768px) {
+  .page-layout {
+    display: block;
+  }
+
+  .page-layout .sidebar {
+    display: none;
+    margin-bottom: 15px !important;
+    padding: 0 20px !important;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .sidebar.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100vh;
+    background: #111;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .mobile-close-icon {
+    display: block;
+  }
+
+  .sidebar ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(8px, 2vw, 14px);
+  }
+
+  .sidebar li a,
+  .sidebar li .sidebar-link {
+    padding-left: 0;
+    line-height: 1;
+  }
+}
+
+/* @media (max-width: 768px) {
 
   .sidebar ul {
     display: flex;
@@ -54,14 +117,14 @@
     margin: 0;
   }
 
-  /* Divider BEFORE text */
+ 
   .sidebar li::before {
     content: "|";
     color: rgba(255, 255, 255, 0.4);
     margin: 0 clamp(6px, 1.5vw, 12px);
   }
 
-  /* Remove divider for first item */
+
   .sidebar li:first-child::before {
     content: "";
     margin: 0;
@@ -73,4 +136,4 @@
     line-height: 1.2;
     text-align: left;
   }
-}
+} */

@@ -17,7 +17,9 @@
   box-sizing: border-box;
 }
 
-
+#bnr-btn{
+  margin-bottom: clamp(25px, 7vw, 120px) !important;
+}
 /* Video Section */
 .bnr-video {
   position: relative;

@@ -265,9 +265,9 @@ const filteredFilms = imagesTwo.filter(
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
               >
-                <option>2023-24</option>
-                <option>2022-23</option>
-                <option>2021-22</option>
+                <option>All Years</option>
+                {/* <option>2022-23</option>
+                <option>2021-22</option> */}
               </select>
             </div>
           </div>
