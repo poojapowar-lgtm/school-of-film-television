@@ -12,15 +12,13 @@
 /* Layout */
 .studio-content {
   display: flex;
-  justify-content: flex-end;
-  padding: clamp(12px, 3vw, 20px);
+  padding: 0 clamp(12px, 3vw, 20px);
 }
 
 .studio-section {
   position: relative;
   padding: 0 clamp(10px, 2vw, 40px);
-  max-width: 750px;
-  text-align: right;
+  max-width: 1400px;
 }
 
 #studio-btn {

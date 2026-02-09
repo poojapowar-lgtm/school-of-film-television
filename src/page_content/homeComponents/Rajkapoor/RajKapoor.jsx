@@ -26,25 +26,57 @@ const RajKapoor = () => {
           {/* Right side - paragraph */}
           <div className="raj-right">
             <DividerWithTitle title="A Timeless Residence of Cinematic Heritage" />
-            <h4 className="subtitle">From the land of Raj Kapoor</h4>
+            <h4 className="subtitle">A Living Legacy of Indian Cinema</h4>
             <div className="raj-text">
               <p>
-                At the legendary Raj Kapoor Studio in Pune, where echoes of
-                cinematic history reverberate, lies the heart of creativity -
-                Film and Television School MIT-ADT University. Amidst the
-                hallowed halls and bustling sets, aspiring filmmakers and actors
-                find their calling. Here, under the guidance of industry
-                stalwarts, dreams take flight. From script to screen, every step
-                resonates with passion and innovation. Students immerse
-                themselves in the art of storytelling, honing their craft amidst
-                the backdrop of cinematic heritage. At Raj Kapoor Studio, the
-                legacy of Indian cinema merges seamlessly with the vision of
-                tomorrow&#39;s storytellers, beckoning aspiring artists to carve
-                their own cinematic journey.
+                The MIT ADT University, Rajbaug Campus is not merely an academic
+                space, it stands on land deeply rooted in the history of Indian
+                cinema. Spread across 125 acres, the campus includes part of
+                what was historically known as Rajbaug, the family estate of the
+                legendary filmmaker Raj Kapoor.It was on this land that Kapoor
+                conceptualised, planned, and created several of his most iconic
+                films, including Bobby, Mera Naam Joker, Satyam Shivam Sundaram,
+                Prem Rog, and later Prem Granth. Renowned filmmaker Yash Chopra
+                also filmed portions of Kala Patthar here, further cementing
+                Rajbaug’s place in India’s cinematic heritage.
+              </p>
+              <p>
+                Raj Kapoor’s association with this land was deeply personal and
+                creative. In keeping with his vision, the Kapoor family chose to
+                dedicate this space to education and creative pursuit, ensuring
+                that it would serve a noble purpose rather than commercial
+                development. Honouring this legacy, MIT ADT University has
+                preserved Raj Kapoor’s bungalow and established a dedicated Raj
+                Kapoor Memorial and Museum on campus. The University also houses
+                the samadhis of Raj Kapoor and his parents, making Rajbaug a
+                site of cultural reverence and a living monument to Indian
+                cinema.
               </p>
             </div>
           </div>
-        </div>
+          <p>
+            The family bungalow on the estate, preserved by the University, is
+            noted as the location where the iconic song “Hum Tum Ek Kamre Mein
+            Band Ho” was filmed, further reinforcing the connection between
+            Kapoor’s creative work and the land that now houses the film school.
+            This historical association significantly enhances the cultural
+            heritage value of the campus where the MIT School of Film &
+            Television educates future filmmakers. Building upon this
+            extraordinary legacy, the MIT School of Film & Television (MITSFT)
+            functions under the mentorship of legendary filmmaker and multiple
+            National Award winner Dr. Jabbar Patel. Under his guidance, the
+            School integrates cinematic tradition with contemporary,
+            internationally benchmarked filmmaking practices. Students are
+            trained not only in technical and creative skills but are also
+            immersed in cinema as an art form, a cultural expression, and a
+            professional discipline. Together, the enduring legacy of Raj Kapoor
+            and the visionary mentorship of Dr. Jabbar Patel shape the MIT
+            School of Film & Television as a unique institution—where the next
+            generation of filmmakers and screen performers is educated in the
+            true spirit of cinema, on land where Indian film history itself was
+            created.
+          </p>
+        </div> 
       </div>
     </>
   );

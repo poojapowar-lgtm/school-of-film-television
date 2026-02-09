@@ -29,7 +29,7 @@ const eventsData = [
   },
   {
     id: 3,
-    title: "Direction &amp; Screenplay Writing Department",
+    title: "Direction & Screenplay Writing Department",
     image: "https://picsum.photos/600/400",
     points: [
       "Workshop on Directing Actors",
@@ -42,7 +42,7 @@ const eventsData = [
   ,
   {
     id: 4,
-    title: "Sound Recording &amp; Designing",
+    title: "Sound Recording & Designing",
     image: "https://picsum.photos/600/400",
     points: [
       "Workshop on Architectural Acoustics and Studio Design",
@@ -54,7 +54,7 @@ const eventsData = [
   ,
   {
     id: 5,
-    title: "VFX &amp; Motion Graphics",
+    title: "VFX & Motion Graphics",
     image: "https://picsum.photos/600/400",
     points: [
       "Workshop on Unreal Engine for Virtual Production &amp; CGI Environment",

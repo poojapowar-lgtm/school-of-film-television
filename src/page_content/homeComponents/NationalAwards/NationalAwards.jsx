@@ -21,7 +21,7 @@ const NationalAwards = () => {
 
   return (
     <div>
-      <DividerWithTitle title="National Awards" />
+      <DividerWithTitle title="National Award" />
       <section className="national-awards">
         <div className="awards-card gradient-border">
           <div className="awards-content">
@@ -32,7 +32,7 @@ const NationalAwards = () => {
                 <li>Film: Pariah (Marathi and Hindi)</li>
                 <li>Section: Non-Feature Film</li>
                 <li>
-                  Awars Winner: Producer (MIT School Of Film & Television, Pune)
+                  Award Winner: Producer (MIT School Of Film & Television, Pune)
                 </li>
                 <li>Awards: Best Debut Non-Feature Film Of Director</li>
               </ul>

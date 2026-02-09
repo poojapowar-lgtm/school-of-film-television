@@ -10,157 +10,152 @@ const AwardStories = () => {
 
   const awardsData = [
     {
-      film: "Aamhi Doghe",
-      award: "Nagpur Film Festival Music & Original Score",
-      student: "Anuj Joshia",
+      film: "SUTTI,CHOWNDKI & TAAL ",
+      award: "Official Selection Bangalore Queer Film Festival-2024",
+      student: "Arpit & Mandar",
     },
     {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+      film: "SAI",
+      award: "Special Jury Award Tamizhagam International Film Festival",
+      student: "Aniruddha Haridas",
     },
-    {
-      film: "Gumnam",
-      award: "Kalakari Film Festival of India 1st Gujrati Short Film",
-      student: "Director - Arpit Modh",
+     {
+      film: "DIVINE CANOPIES  ",
+      award: "Best Video Educational eContent category NCERT Kerala 2021 2023-24",
+      student: "Prof.Wasimbarry Maner",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "MONKEY BRAIN SUSHI ",
+      award: "Official Selection Signs Film Festival,Kerala 2021",
+      student: "Prof. Shrikant Agawane",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "INDHANAM ",
+      award: "Audience Choice Award Mokkho International Film Festival 2024",
+      student: "Surya Vakkalanka",
     },
-    {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+     {
+      film: "SIYA ",
+      award: "Official Selection The Women's Bioscope 2024",
+      student: "Hetansa Rajkotiya",
+    }, {
+      film: "SIYA ",
+      award: "Best VFX Award Asian Talent International Film Festival 2024",
+      student: "Hetansa Rajkotiya",
     },
-    {
-      film: "Aamhi Doghe",
-      award: "Nagpur Film Festival Music & Original Score",
-      student: "Anuj Joshia",
+     {
+      film: "GUMNAAM ",
+      award: "1st Gujrati Short Film Ahmedabad International Film Festival 2024",
+      student: "Arpit Modh",
     },
-    {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+     {
+      film: "DIVINE CANOPIES ",
+      award: "Best Editing All India Children's education eContent 2023-24",
+      student: "Prof.Wasimbarry Maner",
     },
-    {
-      film: "Gumnam",
-      award: "Kalakari Film Festival of India 1st Gujrati Short Film",
-      student: "Director - Arpit Modh",
+     {
+      film: "AAMHI DOGHE ",
+      award: "Official Screening Short film of the Year India 2024",
+      student: "Neel Phadnis",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "KOYTA ",
+      award: "Theme based Educational eContent category NCERT 2023-24",
+      student: "Shaksham Vyas",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "INDHANAM",
+      award: "Winner of Top 100 Short Film DPIFF-2024",
+      student: "Surya Vakkalanka",
+    }, {
+      film: "NIRAST ",
+      award: "Official Screening Golden/Silver Comma Award 2022-23",
+      student: "Purva Dutiya",
     },
-    {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+     {
+      film: "SUNITA ",
+      award: "1st Film Maker Lift-of Global Network Film Festival",
+      student: "Tapasya Chhibber",
     },
-    ,
-    {
-      film: "Gumnam",
-      award: "Kalakari Film Festival of India 1st Gujrati Short Film",
-      student: "Director - Arpit Modh",
+     {
+      film: "INDHANAM ",
+      award: "Best Cinematographer International Film od Andhra Pradesh 2024",
+      student: "Surya Vakkalanka",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "GHUNGHAT ",
+      award: "Best Hindi Film IFH National Level Short Film Awards 2023",
+      student: "Neel Phadnis",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
-    }
-    ,
-    {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+     {
+      film: "RHYTHM OF LIFE ",
+      award: "Best Documentary Student World International Film Festival 2023",
+      student: "Surya Vakkalanka",
     },
-    ,
-    {
-      film: "Gumnam",
-      award: "Kalakari Film Festival of India 1st Gujrati Short Film",
-      student: "Director - Arpit Modh",
+     {
+      film: "ASAMTOL",
+      award: "Special Festival Mention Award Pune International Film Festival 2023",
+      student: "Archit Kirkinde",
+    }, {
+      film: "ASAMTOL ",
+      award: "Best Director One Leaf International Film Festival 2023",
+      student: "Archit Kirkinde",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "ICHWACHA DIRHAD ",
+      award: "Official Selection Alpaviram 6th International Youth Festival - 2022",
+      student: "Sharvari Khambe",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "NINAIVUGALIL ",
+      award: "Official Selection 12th cut.in National Students' Film Festival-2023",
+      student: "Jayshankar Ramu",
     },
-    ,
-    {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+     {
+      film: "SHALECHYE DWARI ",
+      award: "Special Festival Mention Award Jaipur International Film Festival Oct 2022",
+      student: "Manthan Mese",
     },
-    ,
-    {
-      film: "Gumnam",
-      award: "Kalakari Film Festival of India 1st Gujrati Short Film",
-      student: "Director - Arpit Modh",
+     {
+      film: "SUNITA ",
+      award: "Best Documentary Director 12th Pune Short Film Festival 2022",
+      student: "Tapasya Chhibber",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "AYENA ",
+      award: "Best First Film Mumbai Asian Short Film Festival 2017",
+      student: "Jay Agarwal",
+    }, {
+      film: "VIPRALABDHA",
+      award: "Best Short Film International Film Festival Ahmednagar",
+      student: "Bhushan Gokhale",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "THE MOST BEAUTIFUL ",
+      award: "Best Actor Mumbai Asian Short Film Festival 2017",
+      student: "Ankit Bhat",
     },
-    ,
-    {
-      film: "Siya",
-      award: "Kalakari Film Festival of India Certificate of Appreciation",
-      student: "Director & VFX-Hetansa Rajkotia",
+     {
+      film: "PARIAH",
+      award: "Best Director 68th National Film Awards Dadasaheb Phalke Award 2020",
+      student: "Vishesh lyer",
     },
-    ,
-    {
-      film: "Gumnam",
-      award: "Kalakari Film Festival of India 1st Gujrati Short Film",
-      student: "Director - Arpit Modh",
+     {
+      film: "YAKSHIKA ",
+      award: "Best Director Mumbai Asian Short Film Festival 2017",
+      student: "Ajay Patil",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
+     {
+      film: "YAKSHIKA ",
+      award: "Special Festival Mention Award 6th Delhi Shorts International Film Festival 2017",
+      student: "Ajay Patil",
     },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
-    },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
-    },
-    {
-      film: "Indhanam",
-      award: "Global Independent Film Festival of India Best Cinematography",
-      student: "DOP - Aman Mathur",
-    },
+     {
+      film: "WILL ",
+      award: "",
+      student: " IT BE YOU ?",
+    }, 
+   
   ];
 
   return (

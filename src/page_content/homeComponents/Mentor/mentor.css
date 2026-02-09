@@ -34,13 +34,13 @@
 /* MENTOR INFO */
 .mentor-info {
   display: flex;
-  gap: clamp(20px, 4vw, 40px);
+  gap: clamp(20px, 4vw, 20px);
   margin-top: clamp(15px, 3vw, 25px);
   align-items: flex-start;
 }
 
 .mentor-icon {
-     width: clamp(30%, 25%, 75%);
+  width: clamp(30%, 25%, 75%);
   height: auto;
 }
 
@@ -100,9 +100,9 @@
 /* Mobile layout */
 @media (max-width: 768px) {
   .mentor-content {
-    flex-direction: column; 
-    gap:0; 
-    width: 90%; 
+    flex-direction: column;
+    gap: 0;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -115,5 +115,4 @@
     width: clamp(150px, 50vw, 250px);
     height: clamp(150px, 45vw, 250px);
   }
-
 }
