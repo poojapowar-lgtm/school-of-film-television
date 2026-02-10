@@ -19,7 +19,8 @@ const Awards = () => {
     },
     {
       film: "GUMNAAM ",
-      award: "1st Gujrati Short Film Ahmedabad International Film Festival 2024",
+      award:
+        "1st Gujrati Short Film Ahmedabad International Film Festival 2024",
       student: "Arpit Modh",
     },
     {
@@ -115,25 +116,25 @@ const Awards = () => {
       <DividerWithTitle title="Award-Winning Stories by Our Students" />
 
       {/* First Row (5 cards) */}
-      <div className="awards-row five">
-        {awardsData.slice(0, 4).map((item, index) => (
-          <div
-            key={index}
-            className="award-card"
-            style={{
-              backgroundImage: "url(/assets/images/home/award_card_s.svg",
-            }}
-          >
-            <div className="award-content">
-              <p className="film-name">{item.film}</p>
-              <p className="award-name">{item.award}</p>
-              <p className="student-name">{item.student}</p>
+      <div className="award-top">
+        <div className="awards-row five">
+          {awardsData.slice(0, 4).map((item, index) => (
+            <div
+              key={index}
+              className="award-card"
+              style={{
+                backgroundImage: "url(/assets/images/home/award_card_s.svg",
+              }}
+            >
+              <div className="award-content">
+                <p className="film-name">{item.film}</p>
+                <p className="award-name">{item.award}</p>
+                <p className="student-name">{item.student}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Second Row (4 cards) */}
+          ))}
+        </div>
+           {/* Second Row (4 cards) */}
       <div className="awards-row four">
         {awardsData.slice(4, 7).map((item, index) => (
           <div
@@ -151,6 +152,9 @@ const Awards = () => {
           </div>
         ))}
       </div>
+      </div>
+
+   
 
       {/* Button */}
       <button className="button" onClick={() => navigate("/award-stories")}>

@@ -8,7 +8,6 @@ const Message = () => {
 
       <div>
         <div className="leadership-content">
-          {/* Left Content */}
           <div className="leadership-text">
             <p> Dear Parents and Students,</p>
             <p>
@@ -30,13 +29,11 @@ const Message = () => {
             </p>
           </div>
 
-          {/* Right Content */}
           <div className="leadership-profile">
             <img
               src="/assets/images/inner-banner/Dr.jabbar.webp"
               alt="Leader"
               className="leader-image"
-              // style={{ maxHeight: "300px" }}
             />
 
             <div className="leader-info">

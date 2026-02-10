@@ -1,7 +1,5 @@
 .shortfilm-wrapper {
   padding: clamp(20px, 5vw, 40px) clamp(16px, 8vw, 100px);
-  background: black;
-  color: white;
 }
 
 .shortfilm-section {
@@ -44,7 +42,7 @@
 /* Image */
 .film-card img {
   width: 100%;
-  height: auto;
+  height: clamp(140px, 20vw, 350px);
   object-fit: cover;
   display: block;
 }

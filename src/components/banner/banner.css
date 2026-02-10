@@ -1,26 +1,18 @@
-/* Banner Wrapper */
-/* .banner {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: clamp(8px, 2vw, 30px);
-} */
+/* 
 .banner {
   width: 100%;
+  background-color: black;
   position: relative;
   display: flex;
-  justify-content: center;   
-  align-items: center;     
-    padding: 0 clamp(10px, 2.5vw, 40px);
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
 
-#bnr-btn{
+#bnr-btn {
   margin-bottom: clamp(25px, 7vw, 120px) !important;
 }
-/* Video Section */
+
 .bnr-video {
   position: relative;
   width: 100%;
@@ -30,7 +22,6 @@
 .bnr-video-container {
   position: relative;
   width: 100%;
-  /* height: clamp(220px, 50vw, 520px); */
   overflow: hidden;
 }
 
@@ -40,18 +31,16 @@
   object-fit: cover;
 }
 
-/* Overlay */
 .bnr-overlay {
   position: absolute;
   inset: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: clamp(12px, 3vw, 40px) clamp(14px, 4vw, 50px);
   z-index: 2;
 }
 
-/* Banner Image */
+
 .bnr-image {
   width: 100%;
   min-height: clamp(240px, 55vw, 600px);
@@ -61,13 +50,16 @@
   position: relative;
 }
 
-/* Z-index fix */
+
 .banner > * {
   position: relative;
   z-index: 1;
 }
 
-/* Left Title */
+
+.bnr-left{
+  padding-left: 50px;
+}
 .bnr-left-title {
   font-size: clamp(20px, 2vw, 40px);
   font-weight: 700;
@@ -82,7 +74,6 @@
   vertical-align: middle;
 }
 
-/* Right Content */
 .banner-right {
   max-width: clamp(200px, 45vw, 420px);
   text-align: right;
@@ -92,7 +83,7 @@
   font-size: clamp(16px, 2vw, 40px);
   font-weight: 600;
   color: white;
-  margin: clamp(6px, 1vw, 10px);
+  margin: 0;
 }
 
 .banner-text {
@@ -102,7 +93,6 @@
   font-weight: 600;
 }
 
-/* Volume Button */
 .volume-btn {
   position: absolute;
   bottom: clamp(12px, 3vw, 20px);
@@ -115,3 +105,88 @@
   z-index: 3;
 }
 
+
+.reveal-bg {
+  position: relative;
+  overflow: hidden;
+  padding: 6px 12px;
+  color: #fff;
+}
+
+.reveal-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, #B22222, #003153);
+  transform-origin: left;
+  animation: bgRevealLoop 2.5s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes bgRevealLoop {
+  0% {
+    transform: scaleX(0);
+  }
+  40% {
+    transform: scaleX(1);
+  }
+  70% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+} */
+
+.banner {
+  background-color: black;
+}
+.bnr-section {
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bnr-container {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position-y: 0% !important;
+  animation: bgScroll 40s linear infinite;
+  will-change: background-position;
+  border: none;
+}
+
+/* .bnr-section {
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+}
+.bnr-container {
+  width: 100%;
+  height: 100%;
+}
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position-y: 0% !important;
+  animation: bgScroll 40s linear infinite;
+  will-change: background-position;
+} */
+@keyframes bgScroll {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 100% center;
+  }
+}

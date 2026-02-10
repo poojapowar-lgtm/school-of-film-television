@@ -44,7 +44,7 @@ const Programs = () => {
               </button>
             </div>
             <h3 className="subtitle">{program.subtitle}</h3>
-            <p>{program.text}</p>
+            <p className="pg-text">{program.text}</p>
           </div>
         ))}
       </div>

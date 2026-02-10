@@ -10,8 +10,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(15px, 3vw, 20px);
-  background-color: rgba(47, 49, 54, 0.9);
-  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
   padding: clamp(10px, 2vw, 20px);
 }
 
@@ -31,7 +30,7 @@
 
 /* Content */
 .contact-card .content span {
-  color: silver;
+  color: #003153;
   padding-right: clamp(5px, 2vw, 10px);
   font-weight: 500;
 }

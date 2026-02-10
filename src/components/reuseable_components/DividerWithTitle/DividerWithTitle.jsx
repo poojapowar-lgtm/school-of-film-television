@@ -31,9 +31,9 @@ const DividerWithTitle = ({ title }) => {
 
   return (
     <div className="divider-title-row">
-      {!isMobile && <Divider direction="left" />}
+      {/* {!isMobile && <Divider direction="left" />} */}
       <h1 className="title">{title}</h1>
-      {!isMobile && <Divider direction="right" />}
+      {/* {!isMobile && <Divider direction="right" />} */}
     </div>
   );
 };

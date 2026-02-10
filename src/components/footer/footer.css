@@ -38,6 +38,7 @@
   font-size: clamp(12px, 1.2vw, 16px);
   margin-bottom: clamp(10px, 1vw, 20px);
   text-align: center;
+  color: white;
 }
 
 .footer-map {
@@ -55,16 +56,18 @@
 .footer-links {
   display: flex;
   gap: 100px;
+
 }
 
-.footer-links ul {
+.footer-links ul li {
   list-style: none;
   text-align: start;
+    color: white;
 }
 
 .footer-heading {
   display: block;
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(14px, 1.5vw, 20px);
   color: goldenrod;
   margin-bottom: 12px;
   grid-column: 1 / -1;

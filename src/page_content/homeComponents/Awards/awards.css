@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+.award-top{
+    background-color: black;
+    margin: 20px 0;
+}
 /* Rows */
 .awards-row {
+
   display: grid;
   gap: clamp(12px, 2vw, 20px);
   justify-content: center;
@@ -53,6 +58,7 @@
 
 .film-name {
   margin: 0;
+  color: whitesmoke;
   font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 600;
 }
@@ -69,6 +75,7 @@
   margin: 0;
   font-size: clamp(12px, 1.5vw, 18px);
   font-weight: 400;
+  color: white;
 }
 
 /* Button */

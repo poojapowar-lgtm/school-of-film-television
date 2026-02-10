@@ -24,6 +24,7 @@
   width: 100%;
   border-radius: clamp(2%, 4vw, 4%);
   position: relative;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .inner-image {

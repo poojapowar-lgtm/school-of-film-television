@@ -1,14 +1,17 @@
 .national-awards {
-  padding: 20px 0;
-  background-image: url("/public/assets/images/background/nt_frame.svg");
-  background-size: 90%;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  margin-top: 40px;
+  padding: 40px 0;
+  background-color: black;
+  /* background-image: url("/public/assets/images/background/nt_frame.svg"); */
 }
 
 /* Card */
 .awards-card {
-  max-width: 1200px;
+  background-image: url("/public/assets/images/background/nt_frame.svg");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -34,15 +37,20 @@
   text-align: start;
 }
 
+.awards-list li,
+.awards-list li a {
+  color: #ffffff !important;
+}
+
 .awards-list li::before {
   content: "✦";
   margin-right: 10px;
-  color: var(--c1);
+  color: white;
 }
 
 .watch-btn-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: clamp(15px, 1.5vw, 30px);
 }
 

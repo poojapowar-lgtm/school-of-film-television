@@ -54,7 +54,7 @@ const RajKapoor = () => {
               </p>
             </div>
           </div>
-          <p>
+          {/* <p>
             The family bungalow on the estate, preserved by the University, is
             noted as the location where the iconic song “Hum Tum Ek Kamre Mein
             Band Ho” was filmed, further reinforcing the connection between
@@ -75,7 +75,7 @@ const RajKapoor = () => {
             generation of filmmakers and screen performers is educated in the
             true spirit of cinema, on land where Indian film history itself was
             created.
-          </p>
+          </p> */}
         </div> 
       </div>
     </>

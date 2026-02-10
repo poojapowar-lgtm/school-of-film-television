@@ -14,7 +14,7 @@
 .sidebar li a,
 .sidebar li .sidebar-link {
   text-decoration: none;
-  color: #c4c4c4;
+  color: #003153;
   display: block;
   padding: clamp(3px, 0.8vw, 10px) 0 clamp(6px, 0.8vw, 10px)
     clamp(20px, 3vw, 40px);
@@ -27,12 +27,14 @@
 
 .sidebar li.active a,
 .sidebar li a:hover {
-  color: goldenrod;
+background-color: #b22222;
+color: white;
 }
 
 .sidebar li.active .sidebar-link,
 .sidebar li .sidebar-link:hover {
-  color: goldenrod;
+background-color: #b22222;
+color: white;
 }
 
 /* Mobile menu icon */
@@ -40,7 +42,7 @@
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: goldenrod;
+  color: #b22222;
   padding: 10px 0 0 10px;
 }
 

@@ -40,14 +40,15 @@
 }
 
 .alumni-name {
+  padding-top: 15px;
+  margin: 0px;
   font-size: clamp(16px, 2vw, 20px);
-  margin: 0;
-  color: goldenrod;
+  color: #003153;
 }
 
 .nav-btn {
-  background: goldenrod;
-  color: black;
+  background: #B22222;
+  color: white;
   border: none;
   width: clamp(35px, 5vw, 80px);
   font-size: clamp(14px, 2vw, 20px);

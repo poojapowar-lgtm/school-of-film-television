@@ -1,7 +1,5 @@
 .header {
   width: 100%;
-  color: #fff;
-  background: black;
 }
 
 /* Topbar */
@@ -41,7 +39,7 @@
   font-size: clamp(18px, 4vw, 55px);
   font-weight: 500;
   letter-spacing: clamp(2px, 0.6vw, 5px);
-  color: #f9be08;
+  color: #B22222;
   margin: 0;
 }
 
@@ -58,14 +56,12 @@
   width: clamp(40px, 10vw, 220px);
 }
 
-.naac-logo {
-  background-color: white;
-}
+
 /* Hamburger */
 .menu-btn {
   background: none;
   border: none;
-  color: #fff;
+  color: black;
   font-size: clamp(15px, 2vw, 30px);
   cursor: pointer;
   align-self: flex-start;
